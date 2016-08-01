@@ -1,0 +1,71 @@
+body {
+	background-color: #000000;
+	color: #e6e6e6;	
+}
+
+.wrapper {
+	width: 960px;
+	margin: 4px auto 0 auto;	
+	font-family: Tahoma, serif;
+}
+
+.container {
+	width: 850px;
+	margin: 0 auto;
+}
+
+/* Логотип и контакты */
+
+.logo {
+	position: relative;
+}
+
+.contacts {
+	position: absolute;
+	top: 104px;
+	right: 41px;
+	font-size: 10.16px;
+}
+
+.phone {
+	font-size: 8.47px;
+}
+
+/* Countries */
+
+.countries {
+	background: url(../img/bg-image.jpg) no-repeat top;
+}
+
+.countries li {
+	position: relative;
+	margin: 0 5px 72px 5px;
+	text-align: center;
+	font-size: 15.24px;
+	display: inline-block;
+}
+
+.countries figure {    
+	height: 178px;
+	width: 261px;
+	padding-bottom: 3px; 
+}
+
+.countries li:before {
+	content: "";
+	top: -6px;
+	left: -6px;
+	width: 270px;
+	height: 185px;
+	position: absolute;
+	background: url(../img/border.png)	 ;
+}
+
+/* Footer */
+
+footer p {
+	text-align: center;
+	font-size: 10.16px;
+	margin-bottom: 33px;
+}
+

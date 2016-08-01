@@ -1,0 +1,74 @@
+@import url("stylename.css");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 1024px;
+	margin: 42px auto 290px auto;
+	font-family: Arial, sans-serif;
+	background-color: #f3f0f2;
+}
+
+p {
+	margin-top: 17px;
+	text-align: left;
+}
+
+h1 {
+	margin: 0 auto 22px auto;
+	text-transform: uppercase;
+	font-size: 38px;	
+	color: #010101;
+}
+
+p, h3 {
+	color: #1f1f1f;
+}
+
+h3 {
+	margin: 20px auto 23px auto;	
+}
+
+img {
+	border: 1px solid #8f8f8f;	
+}
+
+li {
+	color: #3b3b3b;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	margin: 20px auto 16px auto;
+	background-color: #1f1f1f;
+	opacity: 0.2;
+}
+
+.box {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.first-info-box {
+	text-align: center;
+}
+
+.second-info-box {
+	font-family: "MyriadProRegular", Arial, sans-serif;
+}
+
+.second-info-box hr {
+	background-color: #656466;
+}
+
+.left-spacing {
+	margin-left: 35px;
+}
+
+p.left-spacing {	
+	color: #3a3a3a;
+}
