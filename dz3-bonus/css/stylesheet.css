@@ -1,12 +1,13 @@
 body {
-	background-color: #000000;
-	color: #e6e6e6;	
+	background: #000000 url(../img/bg-image.jpg) center no-repeat;
+	background-size: contain;
+	color: #e6e6e6;
+	font-family: Tahoma, serif;
 }
 
 .wrapper {
 	width: 960px;
-	margin: 4px auto 0 auto;	
-	font-family: Tahoma, serif;
+	margin: 4px auto 0 auto;
 }
 
 .container {
@@ -34,7 +35,7 @@ body {
 /* Countries */
 
 .countries {
-	background: url(../img/bg-image.jpg) no-repeat top;
+	
 }
 
 .countries li {
