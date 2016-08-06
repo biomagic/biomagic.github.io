@@ -5,6 +5,10 @@ body {
     background-color: #128aa7;
 }
 
+h1 {
+	font-size: 18px;
+}
+
 /* Фон бекграунд */
 
 body:before {
@@ -210,6 +214,17 @@ nav {
 }
 
 /* Main content */
+main {
+	text-align: center;
+	color: #424c43;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+main h1 {
+	font-weight: bold;
+	margin-top: 8px;
+}
 
 .leftColumn, 
 .centerColumn, 
@@ -219,21 +234,6 @@ nav {
 .fon3 {
 	float: left;
 	position: relative;
-}
-
-.fon1 {  
-	right: 30%; 
-}
-.fon2 {
-	right: 40%; 
-}
-
-.leftColumn, 
-.rightColumn {
-	width: 20.8%;
-}
-.centerColumn {
-	width: 58.4%;
 }
 
 .fon1, 
@@ -249,3 +249,22 @@ nav {
 	overflow: hidden;
 	left:70%;
 }
+
+.fon1 {  
+	right: 30%; 
+}
+.fon2 {
+	right: 40%; 
+}
+
+.leftColumn, 
+.rightColumn {
+	width: 20.8%;
+	background: #edeef0;
+	border-left: 1px solid #c7cacf;
+	border-right: 1px solid #c7cacf;
+}
+.centerColumn {
+	width: 58.4%;
+}
+
