@@ -227,17 +227,22 @@ nav {
 }
 
 /* Main content */
-main {
+main{
 	text-align: center;
 	color: #424c43;
 	font-size: 14px;
 	line-height: 24px;
 }
 
+main p {	
+	padding-bottom: 9px;
+}
+
 main h1 {
 	font-size: 18px;
 	font-weight: bold;
 	margin-top: 8px;
+
 }
 
 .leftColumn, 
