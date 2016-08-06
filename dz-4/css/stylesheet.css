@@ -1,0 +1,125 @@
+body {  
+	height: 146px;
+    background: 
+    linear-gradient(to bottom, #11cde1, #fff)  0px 30px no-repeat;
+    background-color: #128aa7;
+}
+
+/* Фон бекграунд */
+
+body:before {
+	content: "";
+	display: block;
+	background-color: #5ef0ff;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 29px;
+	z-index: -2;
+}
+
+body:after {
+	content: "";
+	position: absolute;
+	top:146px;
+	display: block;
+	background: linear-gradient(to bottom, #40c5d3, #0c739f) 0px 29px no-repeat;
+	width: 100%;
+	height: 94%;
+	z-index: -3;
+}
+
+/* Обертка */
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-bottom: 31px;
+	-webkit-box-shadow: 
+	0px 0 9px 0px rgba(0, 0, 0, 1);
+	box-shadow: 
+	0px 0 9px 0px rgba(0, 0, 0, 1);
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 175px;
+	border-bottom: 1px solid #128aa7;
+}
+
+/* Логотип */
+
+figure {
+	position: absolute;
+	left: 28px;
+	bottom: -3px;
+}
+
+aside {
+	position: absolute;
+	top: 11px;
+	right: 33px;
+}
+
+/* Контактная информация */
+
+.contact {
+	font-size: 12px;
+	line-height: 19px;
+	width: 100%;
+}
+
+.contact div {
+	float: right;
+}
+
+/* Кнопки стран в header */
+
+.countries ul li {
+	float: left;
+	margin: 30px 14px 0 0; 
+	text-align: center;
+	font-size: 10px;
+
+}
+
+aside, aside a {
+	color: #128aa7;
+}
+
+.photo {
+	height: 235px;
+	border-bottom: 1px solid #138aa7;
+}
+
+.photo img {
+	height: 100%;
+	width: 100%;
+}
+
+nav {
+	position: relative;
+	height: 28px;
+	border-top: 1px solid #cacbcb;
+	border-bottom: 1px solid #000000;
+	background-image: linear-gradient(to bottom, #373737, #303030);
+	z-index: 3;
+	text-align: 14px;
+}
+
+nav ul li {
+	float: left;
+	text-align: center;
+}
+
+nav a {	
+	text-decoration: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
