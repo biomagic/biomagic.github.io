@@ -32,7 +32,7 @@ body:after {
 /* Обертка */
 
 .wrapper {
-	width: 1000px;
+	max-width: 1000px;
 	margin: 0 auto;
 	background-color: #fff;
 	margin-bottom: 31px;
@@ -89,6 +89,8 @@ aside, aside a {
 	color: #128aa7;
 }
 
+/* Изображение */
+
 .photo {
 	height: 235px;
 	border-bottom: 1px solid #138aa7;
@@ -99,27 +101,151 @@ aside, aside a {
 	width: 100%;
 }
 
+/* Навигация */
+
 nav {
 	position: relative;
-	height: 28px;
+	line-height: 28px;
 	border-top: 1px solid #cacbcb;
 	border-bottom: 1px solid #000000;
 	background-image: linear-gradient(to bottom, #373737, #303030);
 	z-index: 3;
-	text-align: 14px;
+	font-size: 14px;
+	color: #fff;
 }
 
-nav ul li {
+.menu li {
+	position: relative;
 	float: left;
+}
+
+.menu a {	
+	text-decoration: none;
+	color: inherit;
+	margin-left: 10px;
+}
+
+.menu>li:nth-child(1) {
+	width: 175px;
 	text-align: center;
 }
 
-nav a {	
-	text-decoration: none;
+.menu>li:nth-child(2) {
+	width: 150px;
 }
+
+.menu>li:nth-child(2):after {
+	position: absolute;
+	top: 1px;
+	content: "▼";
+	margin-left: 6px;
+	font-size: 8px;
+}
+
+.menu>li:nth-child(3) {
+	width: 120px;
+}
+
+.menu>li:nth-child(3):after {
+	position: absolute;
+	top: 1px;
+	content: "▼";
+	margin-left: 9px;	
+	font-size: 8px;
+}
+
+.menu>li:nth-child(4) {
+	width: 136px;
+}
+
+.menu>li:nth-child(4):after {
+	position: absolute;
+	top: 1px;
+	content: "▼";
+	margin-left: 8px;	
+	font-size: 8px;
+}
+
+.menu>li:nth-child(5) {
+	width: 187px;
+}
+
+.menu>li:nth-child(6) {
+	width: 99px;
+}
+
+
+
+/* Submenu */
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: inherit;
+    top: 28px;
+    left: 0;
+    background-image: inherit;
+    border-top: 1px solid black;
+}
+
+.submenu > li {
+    background-color: #303030;
+    width: inherit;
+
+}
+.submenu li a {
+    text-decoration: inherit;
+}
+
+.menu > li:hover > .submenu {
+    display: block;   
+}
+
+/* Очистка блоков */
 
 .clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+/* Main content */
+
+.leftColumn, 
+.centerColumn, 
+.rightColumn, 
+.fon1, 
+.fon2, 
+.fon3 {
+	float: left;
+	position: relative;
+}
+
+.fon1 {  
+	right: 30%; 
+}
+.fon2 {
+	right: 40%; 
+}
+
+.leftColumn, 
+.rightColumn {
+	width: 20.8%;
+}
+.centerColumn {
+	width: 58.4%;
+}
+
+.fon1, 
+.fon2, 
+.fon3 {
+	width: 100%;
+	display: inline-flex;
+}
+
+.leftColumn, 
+.centerColumn, 
+.rightColumn {
+	overflow: hidden;
+	left:70%;
 }
