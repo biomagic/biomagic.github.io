@@ -1,72 +1,85 @@
 body {
-	background: #000000 url(../img/bg-image.jpg) center no-repeat;
-	background-size: contain;
-	color: #e6e6e6;
-	font-family: Tahoma, serif;
+    background: #000 url('../img/bg-image.jpg') center no-repeat;
+    background-size: contain;
+
+    color: #e6e6e6;
+
+    font-family: Tahoma, serif;
 }
 
 .wrapper {
-	width: 960px;
-	margin: 4px auto 0 auto;
+    width: 960px;
+
+    margin: 4px auto 0;
 }
 
 .container {
-	width: 850px;
-	margin: 0 auto;
+    width: 850px;
+
+    margin: 0 auto;
 }
 
 /* Логотип и контакты */
 
 .logo {
-	position: relative;
+    position: relative;
 }
 
 .contacts {
-	position: absolute;
-	top: 104px;
-	right: 41px;
-	font-size: 10.16px;
+    position: absolute;
+    top: 104px;
+    right: 41px;
+
+    font-size: 10.16px;
 }
 
 .phone {
-	font-size: 8.47px;
+    font-size: 8.47px;
 }
 
 /* Countries */
 
-.countries {
-	
-}
+
 
 .countries li {
-	position: relative;
-	margin: 0 5px 72px 5px;
-	text-align: center;
-	font-size: 15.24px;
-	display: inline-block;
+    display: inline-block;
+    position: relative;
+
+    margin: 0 5px 72px;
+
+    font-size: 15.24px;
+
+    text-align: center;
 }
 
-.countries figure {    
-	height: 178px;
-	width: 261px;
-	padding-bottom: 3px; 
+.countries figure {
+    width: 261px;
+
+    height: 178px;
+
+    padding-bottom: 3px;
 }
 
-.countries li:before {
-	content: "";
-	top: -6px;
-	left: -6px;
-	width: 270px;
-	height: 185px;
-	position: absolute;
-	background: url(../img/border.png)	 ;
+.countries li::before {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+
+    width: 270px;
+
+    height: 185px;
+
+    background: url('../img/border.png');
+
+    content: '';
 }
 
 /* Footer */
 
 footer p {
-	text-align: center;
-	font-size: 10.16px;
-	margin-bottom: 33px;
-}
+    margin-bottom: 33px;
 
+    font-size: 10.16px;
+
+    text-align: center;
+}
