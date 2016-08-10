@@ -1,8 +1,6 @@
 body {  
-	height: 146px;
     background: 
-    linear-gradient(to bottom, #41c6d3, #0c739f)  0px 175px no-repeat;
-    background-color: #128aa7;
+    #128aa7 linear-gradient(to bottom, #41c6d3, #0c739f) 0px 175px no-repeat;
     font-size: 12px;
     font-family: Tahoma, serif;
 }
@@ -12,23 +10,13 @@ body {
 body:before {
 	content: "";
 	display: block;
-	background-color: #5ef0ff;
-	width: 100%;
-	height: 1px;
-	position: absolute;
-	top: 29px;
-	z-index: -2;
-}
-
-body:after {
-	content: "";
-	position: absolute;
-	top: 29px;
-	display: block;
-	background: linear-gradient(to bottom, #11cde1, #fff) 0 0 no-repeat;
+	background: #5ef0ff url('../img/bg-gradient.png') repeat-x;
+	border-top: 1px solid #5ef0ff;
 	width: 100%;
 	height: 146px;
-	z-index: -3;
+	position: absolute;
+	top: 28px;
+	z-index: -2;
 }
 
 /* Обертка */
@@ -249,45 +237,20 @@ main h1 {
 
 }
 
-.leftColumn, 
-.centerColumn, 
-.rightColumn, 
-.fon1, 
-.fon2, 
-.fon3 {
-	float: left;
-	position: relative;
-}
-
-.fon1, 
-.fon2, 
-.fon3 {
-	width: 100%;
+.flex-wrapper {  
 	display: inline-flex;
 }
 
-.leftColumn, 
-.centerColumn, 
-.rightColumn {
-	overflow: hidden;
-	left:70%;
-}
+/* Ширина колонок и бордеры */
 
-.fon1 {  
-	right: 30%; 
-}
-.fon2 {
-	right: 40%; 
-}
-
-.leftColumn, 
-.rightColumn {
+.left-col, 
+.right-col {
 	width: 20.8%;
 	background: #edeef0;
 	border-left: 1px solid #c7cacf;
 	border-right: 1px solid #c7cacf;
 }
-.centerColumn {
+.center-col {
 	width: 58.4%;
 }
 
