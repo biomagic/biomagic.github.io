@@ -4,10 +4,9 @@ body {
     font-size: 12px;
 }
 
-/* Фон бекграунд */
+/* Background line */
 
 body::before {
-    display: block;
     position: absolute;
     top: 28px;
     width: 100%;
@@ -18,15 +17,13 @@ body::before {
     z-index: -2;
 }
 
-/* Очистка блоков */
-
 .clearfix::after {
     display: table;
     clear: both;
     content: '';
 }
 
-/* Обертка */
+/* Wrapper & Header */
 
 .wrapper {
     position: relative;
@@ -44,7 +41,7 @@ header {
     border-bottom: 1px solid #128aa7;
 }
 
-/* Логотип */
+/* Logo */
 
 figure {
     position: absolute;
@@ -62,7 +59,7 @@ aside h1 {
     font-weight: bold;
 }
 
-/* Контактная информация */
+/* Contacts */
 
 .contact {
     width: 100%;
@@ -74,7 +71,7 @@ aside h1 {
     float: right;
 }
 
-/* Кнопки стран в header */
+/* Countries buttons in header */
 
 .countries ul li {
     margin: 30px 14px 0 0;
@@ -88,7 +85,7 @@ aside a {
     color: #128aa7;
 }
 
-/* Изображение */
+/* Image */
 
 .photo {
     height: 235px;
@@ -100,7 +97,7 @@ aside a {
     height: 100%;
 }
 
-/* Навигация */
+/* Navigation */
 
 nav {
     position: relative;
@@ -221,7 +218,7 @@ main h1 {
     display: inline-flex;
 }
 
-/* Ширина колонок и бордеры */
+/* Three columns */
 
 .left-col,
 .right-col {
@@ -235,7 +232,7 @@ main h1 {
     width: 58.4%;
 }
 
-/* Футер */
+/* Footer */
 
 footer {
     position: absolute;
