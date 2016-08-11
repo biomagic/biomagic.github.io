@@ -18,9 +18,11 @@ body::before {
 }
 
 .clearfix::after {
-    display: table;
+    display: block;
+    height: 0;
     clear: both;
-    content: '';
+    content: '.';
+    visibility: hidden;
 }
 
 /* Wrapper & Header */
