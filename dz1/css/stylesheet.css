@@ -1,4 +1,4 @@
-@import url("stylename.css");
+@import url('stylename.css');
 
 * {
     margin: 0;
@@ -59,7 +59,7 @@ hr {
 }
 
 .second-info-box {
-    font-family: "MyriadProRegular", Arial, sans-serif;
+    font-family: 'MyriadProRegular', Arial, sans-serif;
 }
 
 .second-info-box hr {
@@ -73,4 +73,3 @@ hr {
 .second-info-box p {
     color: #3a3a3a;
 }
-

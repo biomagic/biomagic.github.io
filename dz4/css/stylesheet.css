@@ -1,6 +1,5 @@
 body {
     background: #128aa7 linear-gradient(to bottom, #41c6d3, #0c739f) 0 175px no-repeat;
-
     font-family: Tahoma, serif;
     font-size: 12px;
 }
@@ -11,78 +10,37 @@ body::before {
     display: block;
     position: absolute;
     top: 28px;
-
-    justify-content: center;
-
     width: 100%;
-
     height: 146px;
-
     border-top: 1px solid #5ef0ff;
-
     background: #5ef0ff url('../img/bg-gradient.png') repeat-x;
-
     content: '';
     z-index: -2;
+}
+
+/* Очистка блоков */
+
+.clearfix::after {
+    display: table;
+    clear: both;
+    content: '';
 }
 
 /* Обертка */
 
 .wrapper {
     position: relative;
-
     max-width: 1000px;
-
     margin: 0 auto;
-
     background-color: #fff;
-}
-
-.wrapper::before {
-    display: block;
-    position: absolute;
-
-    width: 99%;
-
-    height: 100%;
-
-    margin: 0 auto;
-
-    -webkit-box-shadow: 0 13px 9px 0 rgba(0, 0, 0, 1);
-            box-shadow: 5.5px 13px 8px 4.8px rgba(0, 0, 0, .77);
-    content: '';
-    z-index: -1;
-}
-
-/* Футер */
-
-.wrapper::after {
-    display: block;
-    position: absolute;
-
-    width: 105%;
-
-    margin: 3px 0 13px -25px;
-
-    padding-top: 9px;
-
-    background: linear-gradient(to bottom, #1480a7, #147fa6) 0 0 no-repeat;
-
-    color: #fff;
-
-    text-align: center;
-
-    content: 'Copyright(C) asia-holidays.com. 2010';
-    z-index: 5;
+    -webkit-box-shadow: -.5px 13px 8px 0 rgba(0, 0, 0, .38), .5px 13px 8px 0 rgba(0, 0, 0, .38);
+            box-shadow: -.5px 13px 8px 0 rgba(0, 0, 0, .38), .5px 13px 8px 0 rgba(0, 0, 0, .38);
 }
 
 header {
     position: relative;
-
     width: 100%;
-
     height: 175px;
-
     border-bottom: 1px solid #128aa7;
 }
 
@@ -108,9 +66,7 @@ aside h1 {
 
 .contact {
     width: 100%;
-
     font-size: 12px;
-
     line-height: 19px;
 }
 
@@ -122,11 +78,8 @@ aside h1 {
 
 .countries ul li {
     margin: 30px 14px 0 0;
-
     float: left;
-
     font-size: 10px;
-
     text-align: center;
 }
 
@@ -139,13 +92,11 @@ aside a {
 
 .photo {
     height: 235px;
-
     border-bottom: 1px solid #138aa7;
 }
 
 .photo img {
     width: 100%;
-
     height: 100%;
 }
 
@@ -153,38 +104,28 @@ aside a {
 
 nav {
     position: relative;
-
     border-top: 1px solid #cacbcb;
     border-bottom: 1px solid #000;
-
     background-image: linear-gradient(to bottom, #373737, #303030);
-
     color: #fff;
-
     font-size: 14px;
-
     line-height: 28px;
-
     z-index: 3;
 }
 
 .menu li {
     position: relative;
-
     float: left;
 }
 
 .menu a {
     margin-left: 10px;
-
     color: inherit;
-
     text-decoration: none;
 }
 
 .menu > li:nth-child(1) {
     width: 175px;
-
     text-align: center;
 }
 
@@ -195,11 +136,8 @@ nav {
 .menu > li:nth-child(2)::after {
     position: absolute;
     top: 1px;
-
     margin-left: 6px;
-
     font-size: 8px;
-
     content: '▼';
 }
 
@@ -210,11 +148,8 @@ nav {
 .menu > li:nth-child(3)::after {
     position: absolute;
     top: 1px;
-
     margin-left: 9px;
-
     font-size: 8px;
-
     content: '▼';
 }
 
@@ -225,11 +160,8 @@ nav {
 .menu > li:nth-child(4)::after {
     position: absolute;
     top: 1px;
-
     margin-left: 8px;
-
     font-size: 8px;
-
     content: '▼';
 }
 
@@ -248,17 +180,13 @@ nav {
     position: absolute;
     top: 28px;
     left: 0;
-
     width: inherit;
-
     border-top: 1px solid #000;
-
     background-image: inherit;
 }
 
 .submenu > li {
     width: inherit;
-
     background-color: #303030;
 }
 
@@ -272,12 +200,10 @@ nav {
 
 /* Main content */
 main {
+    margin-bottom: 3px;
     color: #424c43;
-
     font-size: 14px;
-
     line-height: 24px;
-
     text-align: center;
 }
 
@@ -287,7 +213,6 @@ main p {
 
 main h1 {
     margin-top: 8px;
-
     font-size: 18px;
     font-weight: bold;
 }
@@ -301,10 +226,8 @@ main h1 {
 .left-col,
 .right-col {
     width: 20.8%;
-
     border-right: 1px solid #c7cacf;
     border-left: 1px solid #c7cacf;
-
     background: #edeef0;
 }
 
@@ -312,12 +235,15 @@ main h1 {
     width: 58.4%;
 }
 
-/* Очистка блоков */
+/* Футер */
 
-.clearfix::after {
-    display: table;
-
-    clear: both;
-
-    content: '';
+footer {
+    position: absolute;
+    width: 102%;
+    margin-left: -1%;
+    background: #1480a7;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    vertical-align: middle;
 }

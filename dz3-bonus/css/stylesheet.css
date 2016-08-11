@@ -1,21 +1,17 @@
 body {
     background: #000 url('../img/bg-image.jpg') center no-repeat;
     background-size: contain;
-
     color: #e6e6e6;
-
     font-family: Tahoma, serif;
 }
 
 .wrapper {
     width: 960px;
-
     margin: 4px auto 0;
 }
 
 .container {
     width: 850px;
-
     margin: 0 auto;
 }
 
@@ -29,12 +25,11 @@ body {
     position: absolute;
     top: 104px;
     right: 41px;
-
-    font-size: 10.16px;
+    font-size: 10px;
 }
 
 .phone {
-    font-size: 8.47px;
+    font-size: 8px;
 }
 
 /* Countries */
@@ -44,19 +39,14 @@ body {
 .countries li {
     display: inline-block;
     position: relative;
-
     margin: 0 5px 72px;
-
-    font-size: 15.24px;
-
+    font-size: 15px;
     text-align: center;
 }
 
 .countries figure {
     width: 261px;
-
     height: 178px;
-
     padding-bottom: 3px;
 }
 
@@ -64,13 +54,9 @@ body {
     position: absolute;
     top: -6px;
     left: -6px;
-
     width: 270px;
-
     height: 185px;
-
     background: url('../img/border.png');
-
     content: '';
 }
 
@@ -78,8 +64,6 @@ body {
 
 footer p {
     margin-bottom: 33px;
-
-    font-size: 10.16px;
-
+    font-size: 10px;
     text-align: center;
 }
