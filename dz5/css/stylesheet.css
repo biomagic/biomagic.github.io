@@ -1,8 +1,8 @@
 body {
-    width: 100%;
     height: 1060px;
     background: url('../img/bg.jpg') 0 36px no-repeat;
     background-size: cover;
+    font-family: 'helveticaneuecyrlight', Arial, sans-serif;
 }
 
 a {
@@ -15,7 +15,6 @@ hr {
 
 .wrapper {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     height: inherit;
@@ -29,10 +28,14 @@ hr {
     visibility: hidden;
 }
 
-/* Top-menu */
+/* Navigation */
 
 nav {
+    display: flex;
+    align-self: baseline;
+    justify-content: flex-end;
     width: 100%;
+    background: #085393;
     line-height: 36px;
 }
 
@@ -48,19 +51,15 @@ nav a:hover {
 
 nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    width: 739px;
     padding-right: 20px;
-    background: #085393;
     text-align: center;
-    white-space: nowrap;
 }
 
 nav ul li:hover {
     background: #4eabda;
     color: #fff;
 }
-/* Dances with menu elements width */
 
 nav ul > li:nth-child(1) {
     width: 105px;
@@ -81,6 +80,7 @@ nav ul > li:nth-child(4) {
 nav ul > li:nth-child(5) {
     width: 72px;
 }
+
 nav ul > li:nth-child(6),
 nav ul > li:nth-child(7),
 nav ul > li:nth-child(6) a,
@@ -95,7 +95,7 @@ nav ul > li:nth-child(7) a {
 
 nav ul > li:nth-child(6) {
     width: 160px;
-    box-shadow: -3px 0 0 -2px #56a2dc;
+    border-left: 1px solid #56a2dc;
 }
 
 nav ul > li:nth-child(7) {
@@ -115,24 +115,43 @@ nav ul img {
     right: 8px;
 }
 
-/* Facebook Form */
+@media all and (max-width: 780px) {
+    nav ul {
+        flex-direction: column;
+        padding-right: 0;
+    }
+    nav ul li {
+        margin: auto;
+    }
+    nav ul > li:nth-child(6) {
+        width: 160px;
+        border: 0;
+    }
+}
+
+/* Main block with form */
 
 main {
     flex-basis: 560px;
 }
 
 main *:focus {
-    outline: none;
+    outline: none; /* Clear outline in elements that focused */
 }
 
-.fb-form {
+main button:hover,
+.send-me-block input:hover {
+    cursor: pointer;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 549px;
+    padding: 26px 0 5px;
     color: #ccc;
-}
-
-.cadastre,
-.fb-form form {
-    background: rgba(0, 0, 0, .63);
-    text-align: center;
 }
 
 .cadastre {
@@ -141,18 +160,22 @@ main *:focus {
     line-height: 62px;
 }
 
-.fb-form form {
-    height: 549px;
+.cadastre,
+.input-form {
+    background: rgba(0, 0, 0, .63);
+    text-align: center;
 }
 
-.fb-form hr {
+/* Seperate line between cadastre block and input form block */
+
+.seperate {
     height: 2px;
     border: 0;
     background: transparent;
     color: transparent;
 }
 
-.fb-form input {
+.input-form input {
     width: 276px;
     height: 35px;
     padding-left: 19px;
@@ -163,88 +186,37 @@ main *:focus {
     color: #fffbfb;
 }
 
-.fb-form input:focus {
+.input-form input:focus {
     border: 1px solid #4984ac;
     background: #1b5288;
+    -webkit-box-shadow: 0 0 5px 2px #5189b4;
     box-shadow: 0 0 5px 2px #5189b4;
 }
 
-.fb-form ::-webkit-input-placeholder {
+/* Placeholder styles */
+
+.input-form ::-webkit-input-placeholder {
     color: #ccc;
 }
 
-.fb-form ::-moz-placeholder {
+.input-form ::-moz-placeholder {
     color: #ccc;
 }/* Firefox 19+ */
 
-.fb-form :-moz-placeholder {
+.input-form :-moz-placeholder {
     color: #ccc;
 }/* Firefox 18- */
 
-.fb-form :-ms-input-placeholder {
+.input-form :-ms-input-placeholder {
     color: #ccc;
 }
 
-#send-me {
-    width: auto;
-    height: auto;
-}
-
-#send-me:focus {
-    box-shadow: none;
-}
-
-.ou {
-    color: #999;
-}
-
-.input-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.account-button {
-    width: 149px;
-    height: 32px;
-    border-top: 0;
-    border-bottom: 0;
-    border-radius: 3px;
-    background-image: linear-gradient(to bottom, #50aedb, #2e7ac4);
-    color: #fff;
-    box-shadow: 0 -1px 0 0 #67c6e6,
-    0 -2px 0 0 #6bb8e7,
-    0 -3px 0 0 rgba(52, 86, 117, .3),
-    0 1px 0 0 #3686ca,
-    0 2px 0 0 rgba(67, 153, 210, .3);
-    border-image: linear-gradient(to bottom, #62a7e1, #4399d1) 1 100%;
-}
-
-.bottom-text {
-    max-width: 310px;
-    font-size: 11px;
-    line-height: 17px;
-}
-
-.send-me-block {
-    width: 295px;
-    text-align: left;
-}
-
-.send-me-block label {
-    padding-left: 8px;
-    vertical-align: middle;
-}
-
-.checkbox {
-    margin: 0;
-    vertical-align: middle;
-}
+/* Facebook button styles */
 
 .fb-button {
     position: relative;
     width: 274px;
+    padding-left: 21px;
     border: none;
     border-top: 1px solid #7889b7;
     border-radius: 2px;
@@ -252,6 +224,9 @@ main *:focus {
     color: #fff;
     font-size: 16px;
     line-height: 31px;
+    -webkit-box-shadow: 1px 0 0 0 rgba(62, 80, 126, .5),
+    -1px 0 0 0 rgba(62, 80, 126, .5),
+    0 1px 0 0 rgba(62, 80, 126, .5);
     box-shadow: 1px 0 0 0 rgba(62, 80, 126, .5),
     -1px 0 0 0 rgba(62, 80, 126, .5),
     0 1px 0 0 rgba(62, 80, 126, .5);
@@ -267,6 +242,8 @@ main *:focus {
     color: #fff;
     font-size: 26px;
     font-weight: 700;
+    -webkit-box-shadow: 1px 0 0 0 rgba(31, 61, 113, .5),
+    2px 0 0 0 #4d66a6;
     box-shadow: 1px 0 0 0 rgba(31, 61, 113, .5),
     2px 0 0 0 #4d66a6;
     content: 'f';
@@ -279,11 +256,13 @@ main *:focus {
     font-size: 12px;
 }
 
+/* OU block */
+
 .ou {
     display: flex;
-    flex-direction: row;
     align-items: center;
     width: 288px;
+    color: #999;
 }
 .ou hr {
     width: 100%;
@@ -293,4 +272,60 @@ main *:focus {
     border-bottom: 1px solid rgb(0, 0, 0);
     background: rgb(102, 102, 102);
     color: rgb(102, 102, 102);
+}
+
+/* Checkbox with label */
+
+.send-me-block {
+    width: 295px;
+    text-align: left;
+}
+
+.send-me-block input {
+    width: auto;
+    height: auto;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.send-me-block input:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.send-me-block label {
+    padding-left: 8px;
+    vertical-align: middle;
+}
+
+/* Create account button */
+
+.account-button {
+    width: 149px;
+    height: 32px;
+    border: 1px solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom, #50aedb, #2e7ac4);
+    color: #fff;
+    -webkit-box-shadow: 0 -1px 0 0 #67c6e6,
+    0 -2px 0 0 #6bb8e7,
+    0 -3px 0 0 rgba(52, 86, 117, .3),
+    0 1px 0 0 #3686ca,
+    0 2px 0 0 rgba(67, 153, 210, .3);
+    box-shadow: 0 -1px 0 0 #67c6e6,
+    0 -2px 0 0 #6bb8e7,
+    0 -3px 0 0 rgba(52, 86, 117, .3),
+    0 1px 0 0 #3686ca,
+    0 2px 0 0 rgba(67, 153, 210, .3);
+    border-image: linear-gradient(to bottom, #62a7e1, #4399d1) 1 100%;
+}
+
+/* Bottom text */
+
+.bottom-text {
+    max-width: 310px;
+    font-size: 11px;
+    line-height: 17px;
 }
