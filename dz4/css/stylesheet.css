@@ -1,9 +1,10 @@
-html {
+html,
+body,
+main {
     height: 100%;
 }
 
 body {
-    height: inherit;
     background: #128aa7 linear-gradient(to bottom, #41c6d3, #0c739f) 0 175px no-repeat;
     font-family: Tahoma, serif;
     font-size: 12px;
@@ -23,11 +24,9 @@ body::before {
 }
 
 .clearfix::after {
-    display: block;
-    height: 0;
+    display: table;
     clear: both;
-    content: '.';
-    visibility: hidden;
+    content: '';
 }
 
 /* Wrapper & Header */
@@ -35,7 +34,7 @@ body::before {
 .wrapper {
     position: relative;
     max-width: 1000px;
-    height: inherit;
+    min-height: 100%;
     margin: 0 auto;
     background-color: #fff;
     -webkit-box-shadow: -.5px 13px 8px 0 rgba(0, 0, 0, .38), .5px 13px 8px 0 rgba(0, 0, 0, .38);
