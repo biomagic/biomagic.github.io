@@ -1,0 +1,33 @@
+.wrapper {
+    max-width: 530px;
+    margin: 0 auto;
+}
+
+/* elements's background */
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.blue {
+    background: blue;
+}
+
+.black {
+    background: black;
+}
+
+table {
+    width: 530px;
+    height: 530px;
+    border: 11px solid #fff;
+}
+
+td {
+    width: 70px;
+    border: 10px solid black;
+}
