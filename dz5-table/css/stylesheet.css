@@ -1,6 +1,16 @@
 .wrapper {
-    max-width: 530px;
-    margin: 0 auto;
+    width: 650px;
+    margin: 50px auto;
+}
+
+/* Border styles */
+
+table {
+    border: 11px solid #fff;
+}
+
+td {
+    border: 10px solid black;
 }
 
 /* elements's background */
@@ -21,13 +31,20 @@
     background: black;
 }
 
-table {
-    width: 530px;
-    height: 530px;
-    border: 11px solid #fff;
+/* Elements size */
+
+tr {
+    height: 34.5px;
 }
 
-td {
-    width: 70px;
-    border: 10px solid black;
+.first-row {
+    height: 58px;
+}
+
+.first-blocks {
+    width: 200px;
+}
+
+.second-blocks {
+    width: 164px;
 }
