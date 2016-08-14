@@ -39,19 +39,9 @@ nav {
     line-height: 36px;
 }
 
-nav a {
-    display: inline-block;
-    width: 100%;
-    color: #60b5ed;
-}
-
-nav a:hover {
-    color: #fff;
-}
-
 nav ul {
     display: flex;
-    width: 739px;
+    width: 731px;
     padding-right: 20px;
     text-align: center;
 }
@@ -61,45 +51,37 @@ nav ul li:hover {
     color: #fff;
 }
 
-nav ul > li:nth-child(1) {
-    width: 105px;
+nav ul li a {
+    padding: 0 10px;
 }
 
-nav ul > li:nth-child(2) {
-    width: 70px;
+nav a {
+    display: inline-block;
+    color: #60b5ed;
 }
 
-nav ul > li:nth-child(3) {
-    width: 64px;
-}
-
-nav ul > li:nth-child(4) {
-    width: 78px;
-}
-
-nav ul > li:nth-child(5) {
-    width: 72px;
-}
-
-nav ul > li:nth-child(6),
-nav ul > li:nth-child(7),
-nav ul > li:nth-child(6) a,
-nav ul > li:nth-child(7) a {
+nav a:hover {
     color: #fff;
 }
 
-nav ul > li:nth-child(7) a {
-    display: inline;
-    text-decoration: underline;
+.li-minhas,
+.li-ola,
+.li-minhas a,
+.li-ola a {
+    color: #fff;
 }
 
-nav ul > li:nth-child(6) {
-    width: 160px;
+.li-minhas {
     border-left: 1px solid #56a2dc;
 }
 
-nav ul > li:nth-child(7) {
-    width: 191px;
+.li-minhas img {
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+.li-ola {
+    padding: 0 10px;
     background: linear-gradient(to bottom, #51b1dc, #2e7ac4);
     -webkit-box-shadow: -1px -1px 0 0 #56a2dc,
     1px -1px 0 0 #4299d2,
@@ -109,10 +91,9 @@ nav ul > li:nth-child(7) {
     inset 0 -1px 0 0 #469bd4;
 }
 
-nav ul img {
-    position: relative;
-    top: 6px;
-    right: 8px;
+.li-ola a {
+    padding: 0;
+    text-decoration: underline;
 }
 
 @media all and (max-width: 780px) {
@@ -123,7 +104,7 @@ nav ul img {
     nav ul li {
         margin: auto;
     }
-    nav ul > li:nth-child(6) {
+    .li-minhas {
         width: 160px;
         border: 0;
     }
