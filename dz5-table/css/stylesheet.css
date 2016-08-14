@@ -6,14 +6,14 @@
 /* Border styles */
 
 .no-border {
-    border-left: hidden;
     border-top: hidden;
     border-bottom: hidden;
-    border-right-color: hidden;
+    border-left: hidden;
+    border-right-color: #fff;
 }
 
 .no-border-right {
-    border-right-color: hidden;
+    border-right-color: #fff;
 }
 
 td {
@@ -74,4 +74,3 @@ table:before {
     background: #fff;
     content: '';
 }
-
