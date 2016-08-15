@@ -5,23 +5,13 @@
 
 /* Border styles */
 
-.no-border {
-    border-top: hidden;
-    border-bottom: hidden;
-    border-left: hidden;
-    border-right-color: #fff;
-}
-
-.no-border-right {
-    border-right-color: #fff;
+table {
+    margin: 0 auto;
+    border: hidden;
 }
 
 td {
     border: 10px solid black;
-}
-
-tr:first-child {
-    border-top: hidden;
 }
 
 /* elements's background */
@@ -49,28 +39,25 @@ tr {
 }
 
 .first-row {
-    height: 53px;
+    height: 52px;
 }
 
-.first-blocks {
-    width: 130px;
+.first-block {
+    width: 255.5px;
 }
 
-.second-blocks {
-    width: 200px;
+.second-block {
+    width: 59px;
 }
 
-.third-blocks {
-    width: 164px;
+.third-block {
+    width: 79px;
 }
 
-/* Special border */
+.fourth-block {
+    width: 75px;
+}
 
-table:before {
-    display: block;
-    position: absolute;
-    width: 16px;
-    height: 570px;
-    background: #fff;
-    content: '';
+.fifth-block {
+    width: 47px;
 }
