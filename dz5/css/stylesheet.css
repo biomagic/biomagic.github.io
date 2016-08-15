@@ -72,7 +72,8 @@ nav a:hover {
 }
 
 .li-minhas {
-    border-left: 1px solid #56a2dc;
+    -webkit-box-shadow: -3px 0 0 -2px #56a2dc;
+    box-shadow: -3px 0 0 -2px #56a2dc;
 }
 
 .li-minhas img {
