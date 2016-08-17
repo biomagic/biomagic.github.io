@@ -1,0 +1,118 @@
+html,
+body,
+.wrapper
+{
+    height: 100%;
+}
+
+html {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+
+    -ms-flex-pack: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 911px;
+    padding-top: 17px;
+    outline: 1px solid red;
+}
+
+.main-header {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 25px;
+    outline: 1px solid red;
+
+    -ms-flex-wrap: nowrap;
+    -ms-flex-align: center;
+}
+
+.contact-box,
+.login-form,
+.mini-buttons {
+    display: inherit;
+    align-items: inherit;
+
+    -ms-flex-align: inherit;
+    -ms-grid-row-align: inherit;
+}
+
+.banner {
+    padding-left: 1px;
+}
+
+.navigation {
+    display: -ms-flexbox;
+    display: flex;
+    height: 34px;
+}
+
+.navigation ul {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    -ms-flex-wrap: nowrap;
+    -ms-flex-align: center;
+}
+
+.values {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+
+    -ms-flex-align: center;
+}
+
+.filters {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    outline: 2px solid green;
+}
+
+/* Catalog production */
+
+/* Left column */
+
+.left-column ul {
+	list-style-image: url('../img/leftColItem.png');
+}
+
+.fa1.fa.fa-circle {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 24px;
+    max-height: 24px;
+    font-size: 26px;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    color: #114165;
+}
+
+.fa2.fa.fa-circle {
+	position: absolute;
+	color: #fff;
+	font-size: 14px;
+	max-height: 14px;
+}
+
+/* Center column */
+
+.center-column {
+
+}
+
+/* Right column */
+
