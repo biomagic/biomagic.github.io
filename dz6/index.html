@@ -54,16 +54,16 @@
 			</nav>
 			<div class="filters">
 				<section class="search-auto">
-					<div>
+					<div class="filter-header">
 						<p>Диски:</p>
 						<h3>Поиск по автомобилю</h3>
 						<p>Шины:</p>
 					</div>
 					<div class="filter-list">
 						<ul>
-							<li>Марка авто:</li>
-							<li>Модель автомобиля:</li>
-							<li>Год выпуска автомобиля:</li>
+							<li>Марка <span class="filter-item">авто:</span></li>
+							<li>Модель <span class="filter-item">автомобиля:</span></li>
+							<li>Год выпуска <span class="filter-item">автомобиля:</span></li>
 							<li>Комплектация:</li>
 						</ul>
 						<ul>
@@ -75,9 +75,9 @@
 							</form>
 						</ul>
 					<ul>
-						<li>Марка авто:</li>
-						<li>Модель автомобиля:</li>
-						<li>Год выпуска автомобиля:</li>
+						<li>Марка <span class="filter-item">авто:</span></li>
+						<li>Модель <span class="filter-item">автомобиля:</span></li>
+						<li>Год выпуска <span class="filter-item">автомобиля:</span></li>
 						<li>Комплектация:</li>
 					</ul>
 					<ul>
@@ -92,7 +92,7 @@
 					<a href="#">Поиск...</a>
 				</section>
 				<section class="search-wheel">
-					<div>
+					<div class="filter-header">
 						<h3>Поиск шин</h3>
 					</div>
 					<form action="">
@@ -111,117 +111,156 @@
 					<a href="#">Поиск...</a>
 				</section>
 				<section class="search-disk">
-					<div>
+					<div class="filter-header">
 						<h3>Поиск дисков</h3>
 						<p>ДЦО</p>
+					</div>
+					<div class="filter-list">
+						<ul>
+							<li>Диаметр <span class="filter-item">диска</span>:</li>
+							<li>Количество <span class="filter-item">крепёжных отверстий</span>:</li>
+							<li>Диаметр <span class="filter-item">расположения крепёжных отверстий</span>:</li>
+						</ul>
+						<ul>
+							<form action="#">
+								<li><select name="" id="">14</select></li>
+								<li><select name="" id="">3</select></li>
+								<li><select name="" id="">12</select></li>
+							</form>
+						</ul>
+						<ul>
+							<li><span class="filter-item">(диаметр центрального отверстия)</span>:</li>
+							<li>ЕТ <span class="filter-item">(вылет диска)</span>:</li>
+						</ul>
+						<ul>
+							<form action="#">
+								<li><select name="" id="">12</select></li>
+								<li><select name="" id="">12</select></li>
+							</form>
+						</ul>
 					</div>
 					<a href="#">Поиск...</a>
 				</section>
 			</div>
-			<div class="left-column">
-				<img src="img/categories.png" alt=""><h1>Каталог продукции:</h1>
-				<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
-				<p>Шины</p>
-				<ul>
-					<li><a href="#">Наименование 1</a></li>
-					<li><a href="#">Наименование 2</a></li>
-					<li><a href="#">Наименование 3</a></li>
-					<li><a href="#">Наименование 4</a></li>
-				</ul>
-				<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
-				<p>Диски</p>
-				<ul>
-					<li><a href="#">Наименование 1</a></li>
-					<li><a href="#">Наименование 2</a></li>
-					<li><a href="#">Наименование 3</a></li>
-					<li><a href="#">Наименование 4</a></li>
-				</ul>
-				<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
-				<p>Болты</p>
-				<ul>
-					<li><a href="#">Наименование 1</a></li>
-					<li><a href="#">Наименование 2</a></li>
-					<li><a href="#">Наименование 3</a></li>
-					<li><a href="#">Наименование 4</a></li>
-				</ul>
-			</div>
-			<div class="center-column">
-				<section>
-					<div class="wheel-item">
-						<a href="#">Goodyear</a>
-						<p>Ultra Grip Extreme</p>
-						<img src="img/wheels/wheel1.png" alt="wheel1">
-						<span>90.00 грн.</span>
+			<div class="main-content">
+				<div class="left-column">
+					<div class="col-header">
+						<img src="img/categories.png" alt="">
+						<h1>Каталог продукции:</h1>
 					</div>
-					<div class="wheel-item">
-						<a href="#">Nokian</a>
-						<p>Hakkapeliitta R</p>
-						<img src="img/wheels/wheel2.png" alt="wheel2">
-						<span>115.00 грн.</span>
+					<div class="list-header">
+						<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
+						<p>Шины</p>
 					</div>
-					<div class="wheel-item">
-						<a href="#">Hankook</a>
-						<p>K 708 155/65 R14</p>
-						<img src="img/wheels/wheel3.png" alt="wheel3">
-						<span>393.00 грн.</span>
-					</div>
-					<div class="wheel-item">
-						<a href="#">Goodyear</a>
-						<p>Ultra Grip Extreme</p>
-						<img src="img/wheels/wheel1.png" alt="wheel1">
-						<span>90.00 грн.</span>
-					</div>
-					<div class="wheel-item">
-						<a href="#">Nokian</a>
-						<p>Hakkapeliitta R</p>
-						<img src="img/wheels/wheel2.png" alt="wheel2">
-						<span>115.00 грн.</span>
-					</div>
-					<div class="wheel-item">
-						<a href="#">Hankook</a>
-						<p>K 708 155/65 R14</p>
-						<img src="img/wheels/wheel3.png" alt="wheel3">
-						<span>393.00 грн.</span>
-					</div>
-					<div class="wheel-item">
-						<a href="#">Goodyear</a>
-						<p>Ultra Grip Extreme</p>
-						<img src="img/wheels/wheel1.png" alt="wheel1">
-						<span>90.00 грн.</span>
-					</div>
-					<div class="wheel-item">
-						<a href="#">Nokian</a>
-						<p>Hakkapeliitta R</p>
-						<img src="img/wheels/wheel2.png" alt="wheel2">
-						<span>115.00 грн.</span>
-					</div>
-					<div class="wheel-item">
-						<a href="#">Hankook</a>
-						<p>K 708 155/65 R14</p>
-						<img src="img/wheels/wheel3.png" alt="wheel3">
-						<span>393.00 грн.</span>
-					</div>
-				</section>
-			</div>
-			<div class="right-column">
-				<img src="img/categories.png" alt=""><h1>Бренды:</h1>
-				<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
-				<form action="#">
-					<p>Шины</p>
 					<ul>
-						<li><input type="checkbox" id="cb1"><label for="cb1"></label>Бренд 1</li>
-						<li><input type="checkbox" id="cb2"><label for="cb2"></label>Бренд 2</li>
-						<li><input type="checkbox" id="cb3"><label for="cb3"></label>Бренд 3</li>
+						<li><a href="#">Наименование 1</a></li>
+						<li><a href="#">Наименование 2</a></li>
+						<li><a href="#">Наименование 3</a></li>
+						<li><a href="#">Наименование 4</a></li>
 					</ul>
+					<div class="list-header">
+						<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
+						<p>Диски</p>
+					</div>
+					<ul>
+						<li><a href="#">Наименование 1</a></li>
+						<li><a href="#">Наименование 2</a></li>
+						<li><a href="#">Наименование 3</a></li>
+						<li><a href="#">Наименование 4</a></li>
+					</ul>
+					<div class="list-header">
+						<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
+						<p>Болты</p>
+					</div>
+					<ul>
+						<li><a href="#">Наименование 1</a></li>
+						<li><a href="#">Наименование 2</a></li>
+						<li><a href="#">Наименование 3</a></li>
+						<li><a href="#">Наименование 4</a></li>
+					</ul>
+				</div>
+				<div class="center-column">
+					<section class="row-wheel">
+						<div class="wheel-item">
+							<a href="#">Goodyear</a>
+							<p>Ultra Grip Extreme</p>
+							<div class="wheel-image"><img src="img/wheels/wheel1.png" alt="wheel1"></div>
+							<span>90.00 грн.</span>
+						</div>
+						<div class="wheel-item">
+							<a href="#">Nokian</a>
+							<p>Hakkapeliitta R</p>
+							<div class="wheel-image"><img src="img/wheels/wheel2.png" alt="wheel2"></div>
+							<span>115.00 грн.</span>
+						</div>
+						<div class="wheel-item">
+							<a href="#">Hankook</a>
+							<p>K 708 155/65 R14</p>
+							<div class="wheel-image"><img src="img/wheels/wheel3.png" alt="wheel3"></div>
+							<span>393.00 грн.</span>
+						</div>
+					</section>
+					<section class="row-wheel">
+						<div class="wheel-item">
+							<a href="#">Goodyear</a>
+							<p>Ultra Grip Extreme</p>
+							<div class="wheel-image"><img src="img/wheels/wheel1.png" alt="wheel1"></div>
+							<span>90.00 грн.</span>
+						</div>
+						<div class="wheel-item">
+							<a href="#">Nokian</a>
+							<p>Hakkapeliitta R</p>
+							<div class="wheel-image"><img src="img/wheels/wheel2.png" alt="wheel2"></div>
+							<span>115.00 грн.</span>
+						</div>
+						<div class="wheel-item">
+							<a href="#">Hankook</a>
+							<p>K 708 155/65 R14</p>
+							<div class="wheel-image"><img src="img/wheels/wheel3.png" alt="wheel3"></div>
+							<span>393.00 грн.</span>
+						</div>
+					</section>
+					<section class="row-wheel">
+						<div class="wheel-item">
+							<a href="#">Goodyear</a>
+							<p>Ultra Grip Extreme</p>
+							<div class="wheel-image"><img src="img/wheels/wheel1.png" alt="wheel1"></div>
+							<span>90.00 грн.</span>
+						</div>
+						<div class="wheel-item">
+							<a href="#">Nokian</a>
+							<p>Hakkapeliitta R</p>
+							<div class="wheel-image"><img src="img/wheels/wheel2.png" alt="wheel2"></div>
+							<span>115.00 грн.</span>
+						</div>
+						<div class="wheel-item">
+							<a href="#">Hankook</a>
+							<p>K 708 155/65 R14</p>
+							<div class="wheel-image"><img src="img/wheels/wheel3.png" alt="wheel3"></div>
+							<span>393.00 грн.</span>
+						</div>
+					</section>
+				</div>
+				<div class="right-column">
+					<img src="img/categories.png" alt=""><h1>Бренды:</h1>
 					<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
-					<p>Диски</p>
-					<ul>
-						<li><input type="checkbox" id="cb4"><label for="cb4"></label>Бренд 1</li>
-						<li><input type="checkbox" id="cb5"><label for="cb5"></label>Бренд 2</li>
-						<li><input type="checkbox" id="cb6"><label for="cb6"></label>Бренд 3</li>
-					</ul>
-					<input type="submit" value="Выбрать">
-				</form>
+					<form action="#">
+						<p>Шины</p>
+						<ul>
+							<li><input type="checkbox" id="cb1"><label for="cb1"></label>Бренд 1</li>
+							<li><input type="checkbox" id="cb2"><label for="cb2"></label>Бренд 2</li>
+							<li><input type="checkbox" id="cb3"><label for="cb3"></label>Бренд 3</li>
+						</ul>
+						<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
+						<p>Диски</p>
+						<ul>
+							<li><input type="checkbox" id="cb4"><label for="cb4"></label>Бренд 1</li>
+							<li><input type="checkbox" id="cb5"><label for="cb5"></label>Бренд 2</li>
+							<li><input type="checkbox" id="cb6"><label for="cb6"></label>Бренд 3</li>
+						</ul>
+						<input type="submit" value="Выбрать">
+					</form>
+				</div>
 			</div>
 		</main>
 		<div class="brand">
