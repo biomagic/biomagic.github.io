@@ -1,22 +1,23 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dflex-jccent">
 <head>
 	<meta charset="UTF-8">
 	<title>Zazor</title>
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/flex.css">
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
-	<div class="wrapper">
-		<header class="main-header">
-			<div class="contact-box">
+	<div class="wrapper dflex-fdcol-aicenter">
+		<header class="main-header dflex-fwnw-aicenter">
+			<div class="contact-box dflex-aicenter">
 				<img src="img/phone.png" alt="Contacts">
 				<p>(044)123-45-67</p>&nbsp;
 				<p>(044)567-89-10</p>
 			</div>
-			<div class="login-inputs">
+			<div class="login-inputs dflex-aicenter">
 				<img src="img/person.png" alt="Login:">
 				<form action="">
 					<input type="text" placeholder="логин" class="login">
@@ -28,7 +29,7 @@
 					<a href="#" class="remember">забыли пароль?</a>
 				</div>
 			</div>
-			<div class="mini-buttons">
+			<div class="mini-buttons dflex-aicenter">
 				<a href="" class="home-icon"><img src="img/home.png" alt="Home"></a>
 				<a href="" class="site-map-icon"><img src="img/map.png" alt="Site map"></a>
 				<a href="" class="letter-icon"><img src="img/letter.png" alt="Mail"></a>
@@ -38,8 +39,8 @@
 			<div class="banner">
 				<img src="img/banner.jpg" alt="">
 			</div>
-			<nav class="navigation">
-				<ul class="nav-list">
+			<nav class="navigation dflex-jcsb">
+				<ul class="nav-list dflex-aicenter">
 					<li><a href="#">О компани</a></li>
 					<li><a href="#">Оплата</a></li>
 					<li><a href="#">Доставка</a></li>
@@ -52,47 +53,47 @@
 					<p class="amount">на сумму: <span>0,00 грн.</span></p>
 				</div>
 			</nav>
-			<div class="filters">
-				<section class="search-auto">
-					<div class="filter-header">
+			<div class="filters dflex-jcsa">
+				<section class="search-auto dflex-fdcol">
+					<div class="filter-header dflex-jcsb-ascenter">
 						<p>Диски:</p>
 						<h3>Поиск по автомобилю</h3>
-						<p>Шины:</p>
+						<p class="filter-bus-space">Шины:</p>
 					</div>
-					<div class="filter-list">
-						<ul>
-							<li>Марка <span class="filter-item">авто:</span></li>
-							<li>Модель <span class="filter-item">автомобиля:</span></li>
-							<li>Год выпуска <span class="filter-item">автомобиля:</span></li>
-							<li>Комплектация:</li>
-						</ul>
-						<ul>
-							<form action="#">
-								<li><select name="" id=""></select></li>
-								<li><select name="" id=""></select></li>
-								<li><select name="" id=""></select></li>
-								<li><select name="" id=""></select></li>
-							</form>
-						</ul>
-					<ul>
-						<li>Марка <span class="filter-item">авто:</span></li>
-						<li>Модель <span class="filter-item">автомобиля:</span></li>
-						<li>Год выпуска <span class="filter-item">автомобиля:</span></li>
-						<li>Комплектация:</li>
-					</ul>
-					<ul>
-						<form action="#">
-							<li><select name="" id=""></select></li>
-							<li><select name="" id=""></select></li>
-							<li><select name="" id=""></select></li>
-							<li><select name="" id=""></select></li>
-						</form>
-					</ul>
+					<div class="filter-list dflex-aicenter-jcsb">
+							<ul class="filter-ul-1">
+								<li>Марка <span class="filter-item">авто:</span></li>
+								<li>Модель <span class="filter-item">автомобиля:</span></li>
+								<li>Год выпуска <span class="filter-item">автомобиля:</span></li>
+								<li>Комплектация:</li>
+							</ul>
+							<ul class="filter-ul-2">
+								<form action="#">
+									<li><select name="" id=""></select></li>
+									<li><select name="" id=""></select></li>
+									<li><select class="select-1" name="" id=""></select></li>
+									<li><select name="" id=""></select></li>
+								</form>
+							</ul>
+							<ul class="filter-ul-1">
+								<li>Марка <span class="filter-item">авто:</span></li>
+								<li>Модель <span class="filter-item">автомобиля:</span></li>
+								<li>Год выпуска <span class="filter-item">автомобиля:</span></li>
+								<li>Комплектация:</li>
+							</ul>
+							<ul class="filter-ul-2">
+								<form action="#">
+									<li><select name="" id=""></select></li>
+									<li><select name="" id=""></select></li>
+									<li><select class="select-1" name="" id=""></select></li>
+									<li><select name="" id=""></select></li>
+								</form>
+							</ul>
 					</div>
-					<a href="#">Поиск...</a>
+					<a href="#" class="filter-search-button as-flex-end">Поиск...</a>
 				</section>
-				<section class="search-wheel">
-					<div class="filter-header">
+				<section class="search-wheel dflex-fdcol">
+					<div class="filter-header dflex-jcsb-ascenter">
 						<h3>Поиск шин</h3>
 					</div>
 					<form action="">
@@ -108,10 +109,10 @@
 							<li><input type="checkbox">всесез</li>
 						</ul>
 					</form>
-					<a href="#">Поиск...</a>
+					<a href="#" class="filter-search-button">Поиск...</a>
 				</section>
-				<section class="search-disk">
-					<div class="filter-header">
+				<section class="search-disk dflex-fdcol">
+					<div class="filter-header dflex-jcsb-ascenter">
 						<h3>Поиск дисков</h3>
 						<p>ДЦО</p>
 					</div>
@@ -139,17 +140,17 @@
 							</form>
 						</ul>
 					</div>
-					<a href="#">Поиск...</a>
+					<a href="#" class="filter-search-button">Поиск...</a>
 				</section>
 			</div>
-			<div class="main-content">
+			<div class="main-content dflex-jcsb">
 				<div class="left-column">
-					<div class="col-header">
+					<div class="col-header dflex-aicenter">
 						<img src="img/categories.png" alt="">
 						<h1>Каталог продукции:</h1>
 					</div>
-					<div class="list-header">
-						<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
+					<div class="list-header dflex-aicenter">
+						<i class="fa1 fa fa-circle dflex-jccent-aicenter"><i class="fa2 fa fa-circle"></i></i>
 						<p>Шины</p>
 					</div>
 					<ul>
@@ -159,7 +160,7 @@
 						<li><a href="#">Наименование 4</a></li>
 					</ul>
 					<div class="list-header">
-						<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
+						<i class="fa1 fa fa-circle dflex-jccent-aicenter"><i class="fa2 fa fa-circle"></i></i>
 						<p>Диски</p>
 					</div>
 					<ul>
@@ -169,7 +170,7 @@
 						<li><a href="#">Наименование 4</a></li>
 					</ul>
 					<div class="list-header">
-						<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
+						<i class="fa1 fa fa-circle dflex-jccent-aicenter"><i class="fa2 fa fa-circle"></i></i>
 						<p>Болты</p>
 					</div>
 					<ul>
@@ -179,61 +180,61 @@
 						<li><a href="#">Наименование 4</a></li>
 					</ul>
 				</div>
-				<div class="center-column">
-					<section class="row-wheel">
-						<div class="wheel-item">
+				<div class="center-column dflex-fdcol">
+					<section class="row-wheel dflex-jcsb">
+						<div class="wheel-item dflex-fdcol-aicenter">
 							<a href="#">Goodyear</a>
 							<p>Ultra Grip Extreme</p>
 							<div class="wheel-image"><img src="img/wheels/wheel1.png" alt="wheel1"></div>
 							<span>90.00 грн.</span>
 						</div>
-						<div class="wheel-item">
+						<div class="wheel-item dflex-fdcol-aicenter">
 							<a href="#">Nokian</a>
 							<p>Hakkapeliitta R</p>
 							<div class="wheel-image"><img src="img/wheels/wheel2.png" alt="wheel2"></div>
 							<span>115.00 грн.</span>
 						</div>
-						<div class="wheel-item">
+						<div class="wheel-item dflex-fdcol-aicenter">
 							<a href="#">Hankook</a>
 							<p>K 708 155/65 R14</p>
 							<div class="wheel-image"><img src="img/wheels/wheel3.png" alt="wheel3"></div>
 							<span>393.00 грн.</span>
 						</div>
 					</section>
-					<section class="row-wheel">
-						<div class="wheel-item">
+					<section class="row-wheel dflex-jcsb">
+						<div class="wheel-item dflex-fdcol-aicenter">
 							<a href="#">Goodyear</a>
 							<p>Ultra Grip Extreme</p>
 							<div class="wheel-image"><img src="img/wheels/wheel1.png" alt="wheel1"></div>
 							<span>90.00 грн.</span>
 						</div>
-						<div class="wheel-item">
+						<div class="wheel-item dflex-fdcol-aicenter">
 							<a href="#">Nokian</a>
 							<p>Hakkapeliitta R</p>
 							<div class="wheel-image"><img src="img/wheels/wheel2.png" alt="wheel2"></div>
 							<span>115.00 грн.</span>
 						</div>
-						<div class="wheel-item">
+						<div class="wheel-item dflex-fdcol-aicenter">
 							<a href="#">Hankook</a>
 							<p>K 708 155/65 R14</p>
 							<div class="wheel-image"><img src="img/wheels/wheel3.png" alt="wheel3"></div>
 							<span>393.00 грн.</span>
 						</div>
 					</section>
-					<section class="row-wheel">
-						<div class="wheel-item">
+					<section class="row-wheel dflex-jcsb">
+						<div class="wheel-item dflex-fdcol-aicenter">
 							<a href="#">Goodyear</a>
 							<p>Ultra Grip Extreme</p>
 							<div class="wheel-image"><img src="img/wheels/wheel1.png" alt="wheel1"></div>
 							<span>90.00 грн.</span>
 						</div>
-						<div class="wheel-item">
+						<div class="wheel-item dflex-fdcol-aicenter">
 							<a href="#">Nokian</a>
 							<p>Hakkapeliitta R</p>
 							<div class="wheel-image"><img src="img/wheels/wheel2.png" alt="wheel2"></div>
 							<span>115.00 грн.</span>
 						</div>
-						<div class="wheel-item">
+						<div class="wheel-item dflex-fdcol-aicenter">
 							<a href="#">Hankook</a>
 							<p>K 708 155/65 R14</p>
 							<div class="wheel-image"><img src="img/wheels/wheel3.png" alt="wheel3"></div>
@@ -243,7 +244,7 @@
 				</div>
 				<div class="right-column">
 					<img src="img/categories.png" alt=""><h1>Бренды:</h1>
-					<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
+					<i class="fa1 fa fa-circle dflex-jccent-aicenter"><i class="fa2 fa fa-circle"></i></i>
 					<form action="#">
 						<p>Шины</p>
 						<ul>
@@ -251,7 +252,7 @@
 							<li><input type="checkbox" id="cb2"><label for="cb2"></label>Бренд 2</li>
 							<li><input type="checkbox" id="cb3"><label for="cb3"></label>Бренд 3</li>
 						</ul>
-						<i class="fa1 fa fa-circle"><i class="fa2 fa fa-circle"></i></i>
+						<i class="fa1 fa fa-circle dflex-jccent-aicenter"><i class="fa2 fa fa-circle"></i></i>
 						<p>Диски</p>
 						<ul>
 							<li><input type="checkbox" id="cb4"><label for="cb4"></label>Бренд 1</li>
@@ -264,7 +265,7 @@
 			</div>
 		</main>
 		<div class="brand">
-			<ul>
+			<ul class="dflex-jcsb">
 				<li><img src="img/brands/brand1.png" alt="#"></li>
 				<li><img src="img/brands/brand2.png" alt="#"></li>
 				<li><img src="img/brands/brand3.png" alt="#"></li>
@@ -275,8 +276,8 @@
 				<li><img src="img/brands/brand8.png" alt="#"></li>
 			</ul>
 		</div>
-		<div class="footer">
-			<ul>
+		<div class="footer d-flex">
+			<ul class="dflex-jcsb">
 				<li><a href="#">О компании</a></li>
 				<li><a href="#">Доставка</a></li>
 				<li><a href="#">Статьи</a></li>
