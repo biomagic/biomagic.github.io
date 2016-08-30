@@ -1,4 +1,4 @@
-.d-flex {
+.dflex {
     display: -ms-flexbox;
     display: flex;
 }
@@ -42,11 +42,31 @@
     -ms-flex-direction: column;
 }
 
+.dflex-fdcol-jcsb {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -ms-flex-direction: column;
+}
+
 .dflex-jccent {
     display: -ms-flexbox;
     display: flex;
     justify-content: center;
     -ms-flex-pack: center;
+}
+
+.dflex-fdcol-aife-jcsa {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+        align-items: flex-end;
+    -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 }
 
 .dflex-jccent-aicenter {
@@ -88,6 +108,15 @@
     -ms-flex-pack: distribute;
 }
 
+.dflex-fdcol-jcsa {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    -ms-flex-pack: justify;
+    -ms-flex-direction: column;
+}
+
 .dflex-fdcol {
     display: -ms-flexbox;
     display: flex;
@@ -102,6 +131,16 @@
     justify-content: space-between;
     -ms-flex-pack: justify;
     -ms-flex-item-align: center;
+}
+
+.dflex-jcsb-asfstart {
+    display: -ms-flexbox;
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -ms-flex-item-align: start;
+    -ms-flex-item-align: flex-start;
 }
 
 .dflex-fwnw-aicenter {
