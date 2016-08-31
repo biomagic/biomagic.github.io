@@ -67,8 +67,7 @@ select {
 
 .main-header {
     height: 25px;
-    margin-top: 10px;
-    margin-bottom: 21px;
+    margin: 10px 0 21px;
     width: 100%;
 }
 
@@ -88,8 +87,8 @@ select {
 .login-inputs {
     height: 25px;
     margin: -6px 0 0 0;
-    padding-left: 6.5px;
-    width: 488.5px;
+    padding-left: 7.5px;
+    width: 487.5px;
     border-radius: 3px;
     background-image: linear-gradient(to bottom, #1f6787, #0c3357);
     font-size: 11px;
@@ -388,6 +387,7 @@ ul.nav-list {
 
 .amount span {
     margin-left: 10px;
+    position: relative;
 }
 
 /* Filters */
@@ -422,6 +422,7 @@ ul.nav-list {
     width: 100%;
     height: 136px;
     margin-bottom: 16px;
+    padding-left: 1px;
 }
 
 .filters section {
@@ -480,10 +481,7 @@ ul.nav-list {
 .search-auto .filter-ul-1 {
     height: 71px;
     margin-top: -7px;
-    -ms-flex-preferred-size: 75px;
-    flex-basis: 75px;
     margin-left: 5px;
-    -ms-flex-preferred-size: 71px;
 }
 
 .search-auto .filter-ul-1 li {
@@ -509,8 +507,8 @@ ul.nav-list {
 
 .search-auto {
     -ms-flex-preferred-size: 411px;
-    flex-basis: 411px;
     margin: 0px 0px 0px -4px;
+    flex-basis: 411px;
     -ms-flex-preferred-size: 384px;
 }
 
@@ -812,7 +810,7 @@ section ul li {
     top: 1px;
 }
 
-.left-column ul li:before {
+.left-column ul a:before {
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -820,6 +818,10 @@ section ul li {
     content: '';
     left: -2px;
     position: relative;
+}
+
+.left-column ul a:hover:before {
+	top: -2px;
 }
 
 .left-column h1,
@@ -841,7 +843,7 @@ section ul li {
 .left-column a:hover:after {
     position: absolute;
     bottom: -2px;
-    left: 8px;
+    left: 9px;
     width: 113px;
     border-bottom: 2px solid rgba(12, 50, 86, .8 );
     box-shadow: -1px 0 0 0 rgba(12, 50, 86, .4),
@@ -865,6 +867,9 @@ section ul li {
     font-style: italic;
     font-weight: 600;
     text-decoration: none;
+    position: relative;
+    left: 10px;
+    letter-spacing: 0px;
 }
 
 .disks .circle {
@@ -936,6 +941,24 @@ section ul li {
     position: relative;
     left: 7px;
     top: -1px;
+}
+
+.goodyear p {
+	padding-left: 7px;
+	letter-spacing: -0.1px;
+}
+
+.nokian p, .nokian a{
+	padding-left: 5px;
+}
+
+.hankook a {
+	padding-left: 5px;
+}
+
+.hankook p {
+	padding-left: 2px;
+	letter-spacing: -0.1px;
 }
 
 /* Right column */
@@ -1027,9 +1050,16 @@ section ul li {
 /* Brand */
 
 .brand {
-    width: 668px;
-    margin-top: 41px;
-    margin-bottom: 19px;
+    width: 675px;
+    margin: 39px 0 23px;
+}
+
+.brand li {
+	line-height: 17px;
+}
+
+.brand img {
+	vertical-align: middle;
 }
 
 /* Footer */
