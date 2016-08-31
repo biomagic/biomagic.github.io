@@ -1,39 +1,26 @@
-.dflex {
+.df {
     display: -ms-flexbox;
     display: flex;
 }
-.j-cont-sb {
-    justify-content: space-between;
-    -ms-flex-pack: justify;
-}
 
-.j-cont-sa {
-    justify-content: space-around;
-    -ms-flex-pack: distribute;
-}
-
-.ai-center {
-    align-items: center;
-    -ms-grid-row-align: center;
-    -ms-flex-align: center;
-}
-
-.as-center {
-    align-self: center;
-    -ms-flex-item-align: center;
-}
-
-.as-flex-end {
+.asfe {
     align-self: flex-end;
     -ms-flex-item-align: end;
 }
 
-.fd-col {
+.asfs {
+    align-self: flex-start;
+    -ms-flex-item-align: start;
+}
+
+.df-fdcol {
+    display: -ms-flexbox;
+    display: flex;
     flex-direction: column;
     -ms-flex-direction: column;
 }
 
-.dflex-fdcol-aicenter {
+.df-fdcol-aicenter {
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
@@ -42,7 +29,16 @@
     -ms-flex-direction: column;
 }
 
-.dflex-fdcol-jcsb {
+.df-fdcol-aife {
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    -ms-flex-align: end;
+    -ms-flex-direction: column;
+}
+
+.df-fdcol-jcsb {
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
@@ -51,14 +47,7 @@
     -ms-flex-direction: column;
 }
 
-.dflex-jccent {
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    -ms-flex-pack: center;
-}
-
-.dflex-fdcol-aife-jcsa {
+.df-fdcol-jcsa-aife {
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
@@ -69,16 +58,28 @@
     -ms-flex-direction: column;
 }
 
-.dflex-fdcol-aife {
+.df-jccent {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: end;
-        align-items: flex-end;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    justify-content: center;
+    -ms-flex-pack: center;
 }
 
-.dflex-jccent-aicenter {
+.df-jcsa {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    -ms-flex-pack: distribute;
+}
+
+.df-jcsb {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+}
+
+.df-jccent-aicenter {
     display: -ms-flexbox;
     display: flex;
     align-items: center;
@@ -87,77 +88,39 @@
     -ms-flex-pack: center;
 }
 
-.dflex-jcsb {
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: space-between;
-    -ms-flex-pack: justify;
-}
-
-.dflex-aicenter {
+.df-jcsa-aicenter {
     display: -ms-flexbox;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     -ms-flex-align: center;
-}
-
-.dflex-aicenter-jcsb {
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    -ms-flex-pack: justify;
-}
-
-.dflex-aicenter-jcsa {
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -ms-flex-pack: justify;
+}
+
+.df-jcsb-aicenter {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     -ms-flex-align: center;
     -ms-flex-pack: justify;
 }
 
-.dflex-jcsa {
+.df-jcsb-asfstart {
     display: -ms-flexbox;
-    display: flex;
-    justify-content: space-around;
-    -ms-flex-pack: distribute;
-}
-
-.dflex-fdcol-jcsa {
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    -ms-flex-pack: justify;
-    -ms-flex-direction: column;
-}
-
-.dflex-fdcol {
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    -ms-flex-direction: column;
-}
-
-.dflex-jcsb-ascenter {
-    display: -ms-flexbox;
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
-    -ms-flex-pack: justify;
-    -ms-flex-item-align: center;
-}
-
-.dflex-jcsb-asfstart {
-    display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     align-self: flex-start;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     -ms-flex-pack: justify;
     -ms-flex-item-align: start;
     -ms-flex-item-align: flex-start;
+}
+
+
+.df-aicenter {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
 }
