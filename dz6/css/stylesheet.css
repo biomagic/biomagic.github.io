@@ -194,10 +194,13 @@ select {
 }
 
 .right-column .col-header {
-    margin-top: 1px;
     color: #0c3256;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     font-size: 14px;
+    padding-left: 3px;
+    width: 178px;
+    position: relative;
+    left: -1px;
 }
 
 .enter-form a {
@@ -538,8 +541,6 @@ ul.nav-list {
     background-image: url('../img/arrow3.png');
 }
 
-
-
 .sizes {
 	max-width: 165px;
 }
@@ -755,6 +756,15 @@ section ul li {
     -ms-flex-preferred-size: 192px;
 }
 
+.circle {
+	position: relative;
+}
+
+.left-column .disks .circle {
+	left: -1.5px;
+	top: -0.5px;
+}
+
 .left-column .list-header {
     border: 1px solid #79878d;
     border-radius: 11px;
@@ -764,7 +774,7 @@ section ul li {
 
 .left-col-items {
     width: 150px;
-    padding-top: 13px;
+    padding-top: 12px;
 }
 
 .col-header {
@@ -772,10 +782,14 @@ section ul li {
     height: 25px;
     border: 1px solid rgba(121, 135, 141, .5);
     border-radius: 15px;
+    box-shadow: 1px 2px 0px 0px rgba(104, 104, 104, 0.1);
 }
 
 .col-header img {
-    margin: -5px 4px 0 0;
+    margin: -5px 6px 0 0;
+    position: relative;
+    left: 2px;
+    top: 1px;
 }
 
 /* Left column */
@@ -783,6 +797,10 @@ section ul li {
 .left-column .col-header {
     margin: 3px 0 0 0;
     letter-spacing: .4px;
+    position: relative;
+    top: -1px;
+    left: -2px;
+    width: 181px;
 }
 
 .left-column ul {
@@ -847,6 +865,16 @@ section ul li {
     font-style: italic;
     font-weight: 600;
     text-decoration: none;
+}
+
+.disks .circle {
+	left: -2.7px;
+	top: 0.5px;
+}
+
+.bolt .circle {
+	left: -1.5px;
+	top: -1px;
 }
 
 /* Center column */
@@ -923,18 +951,18 @@ section ul li {
     color: #465961;
     font-size: 13px;
     line-height: 11px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .right-col-items {
     width: 169px;
-    padding-top: 1px;
+    padding-top: 2px;
     position: relative;
     top: 12px;
 }
 
 .right-col-items ul {
-	padding: 10px 0 0px 33px;
+	padding-left: 34px;
 }
 
 .brand-button {
@@ -962,6 +990,14 @@ section ul li {
 	height: 76px;
 }
 
+.bus {
+	padding-top: 9px;
+}
+
+.wheels {
+	padding-top: 12px;
+}
+
 .right-col-items label:before {
     bottom: 1px;
     left: -23px;
@@ -970,12 +1006,22 @@ section ul li {
     background-image: url('../img/checkboxImg.png');
 }
 
+.right-col-items p {
+	padding-left: 5px;
+}
+
 .right-column .list-header {
     height: 26px;
     border: 1px solid #79878d;
     border-radius: 11px;
     font-size: 14px;
     width: 134px;
+}
+
+.right-column img {
+	position: relative;
+	left: 0px;
+	top: 1px;
 }
 
 /* Brand */
