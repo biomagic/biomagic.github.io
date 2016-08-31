@@ -36,6 +36,7 @@ select {
     background-position: right center;
     /*for WebKit*/
     font-size: 11px;
+
     -webkit-appearance: none;
     /* for FF */
     -moz-appearance: none;
@@ -58,7 +59,11 @@ select {
     margin: 10px 0 21px;
 }
 
-.contact-box {color: #5e696d;font-size: 18px;letter-spacing: 0.5px;}
+.contact-box {
+    color: #5e696d;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
 
 .contact-box img {
     position: relative;
@@ -262,8 +267,8 @@ select {
     line-height: 32px;
     box-shadow: 0 -3px 0 -2px rgba(60, 67, 103, 1),
     inset 3px 0 0 -2px rgba(13, 22, 66, .5),
-    1px 2px 9px 0px rgba(0, 0, 0, 0.7),
-    -4px 0px 0px -3px rgba(13, 22, 65, 0.4);
+    1px 2px 9px 0 rgba(0, 0, 0, .7),
+    -4px 0 0 -3px rgba(13, 22, 65, .4);
 }
 
 .navigation a {
@@ -366,10 +371,10 @@ ul.nav-list {
 .filter-search-button a {
     display: inline-block;
     padding-bottom: 2px;
-    text-decoration: none;
     color: #154467;
     font-size: 14px;
     font-style: italic;
+    text-decoration: none;
 }
 
 .filter-search-button {
@@ -410,8 +415,8 @@ ul.nav-list {
     padding-top: 6px;
     color: #154468;
     font-size: 10px;
-    letter-spacing: .2px;
     font-weight: 800;
+    letter-spacing: .2px;
 }
 
 .filters .filter-header .filter-bus-space {
@@ -419,20 +424,20 @@ ul.nav-list {
 }
 
 .search-auto .filter-header h3 {
+    margin-left: -4px;
     padding-top: 2px;
     letter-spacing: .4px;
-    margin-left: -4px;
 }
 
 .filter-box-1,
 .filter-box-2 {
-    padding: 0px 11px;
+    padding: 0 11px;
 }
 
 .search-auto .filter-box-2 {
-    margin-top: -5px;
     position: relative;
     left: -3px;
+    margin-top: -5px;
 }
 
 .search-auto .filter-ul-1 {
@@ -455,9 +460,9 @@ ul.nav-list {
 }
 
 .search-auto {
-    -ms-flex-preferred-size: 414px;
-        flex-basis: 414px;
+    flex-basis: 414px;
     margin-left: -2px;
+    -ms-flex-preferred-size: 414px;
     -ms-flex-preferred-size: 411px;
 }
 
@@ -498,9 +503,9 @@ ul.nav-list {
 }
 
 .search-wheel {
-    -ms-flex-preferred-size: 192px;
-        flex-basis: 192px;
+    flex-basis: 192px;
     margin-left: 1px;
+    -ms-flex-preferred-size: 192px;
     -ms-flex-preferred-size: 189px;
 }
 
@@ -709,9 +714,9 @@ section ul li {
 .col-header {
     width: 179px;
     height: 25px;
-    border: 1px solid rgba(121, 135, 141, 0.7);
+    border: 1px solid rgba(121, 135, 141, .7);
     border-radius: 15px;
-    box-shadow: 1px 2px 0 0 rgba(104, 104, 104, 0.4);
+    box-shadow: 1px 2px 0 0 rgba(104, 104, 104, .4);
 }
 
 .col-header img {
@@ -925,8 +930,8 @@ section ul li {
 
 .bus,
 .wheels {
-	height: 76px;
-	padding: 10px 0px 0px 34px;
+    height: 76px;
+    padding: 10px 0 0 34px;
 }
 
 .right-col-items label:before {
@@ -977,7 +982,7 @@ section ul li {
     left: 2px;
     width: 298px;
     margin: 0 auto;
-    letter-spacing: 0.4px;
+    letter-spacing: .4px;
 }
 
 .footer a {
