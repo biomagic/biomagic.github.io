@@ -2,11 +2,23 @@ html,
 body,
 .wrapper {
     height: 100%;
+    height: 2525px;
     font-family: 'LeagueGothicRegular', sans-serif;
+}
+
+body {
+    color: #fff;
 }
 
 * {
     box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Top block */
@@ -21,7 +33,9 @@ body,
     padding-bottom: 31px;
     font-size: 48px;
     text-align: center;
-    text-transform: uppercase;
+}
+
+.head-block__pingbuller_text-shadow {
     text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
 }
 
@@ -32,15 +46,17 @@ body,
     -webkit-background-clip: text;
 }
 
-.head-nav-list__link {
-    position: relative;
+.head-nav-ul__a_white-shadow,
+.head-nav-ul__a_text-shadow-white-hover:hover {
     color: #fff;
-    font-size: 24px;
-    text-decoration: none;
-    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .5);
 }
 
-.head-nav-list__link_border_bottom:after {
+.head-nav-ul__a {
+    font-size: 24px;
+}
+
+.head-nav-ul__a_border-bottom:after {
     display: block;
     position: absolute;
     bottom: -3px;
@@ -58,31 +74,30 @@ body,
 
 .head-slider__p {
     color: #edbfff;
-    text-transform: uppercase;
 }
 
 /* Radio style */
 
 .head-checkboxes__label {
-    cursor: pointer;
+    display: inline-block;
     position: relative;
     margin-right: 19px;
-    display: inline-block;
+    cursor: pointer;
 }
 
-input[type=radio]{
+input[type=radio] {
     display: none;
 }
 
 .head-checkboxes__label:before {
-    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 11px;
     height: 11px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
     border: 3px solid rgba(0, 0, 0, .3);
     background: rgba(0, 0, 0, .3) padding-box;
+    content: '';
 }
 
 .head-checkboxes__label:before {
@@ -98,8 +113,54 @@ input[type=radio]{
 }
 
 input[type=radio]:checked + .head-checkboxes__label:before {
-    content: "";
     background: linear-gradient(to bottom, #fdfdfd, #dedede) padding-box;
+    content: '';
+}
+
+/* Info-block */
+
+.info-block {
+    padding: 28px 27px 69px 82px ;
+    background: linear-gradient(to bottom, #765284, #36293d);
+    box-shadow: inset 0 -1px 0 0 #f9f9f9,
+    inset 0 -2px 0 0 #12191f,
+    inset 0 -3px 0 0 #21333b;
+}
+
+.info-block-article {
+    position: relative;
+    margin-top: 45px;
+}
+
+.info-block-article:before {
+    position: absolute;
+    top: 2px;
+    left: -49px;
+    width: 24px;
+    height: 25px;
+    background: url('../img/wrench.png');
+    content: '';
+}
+
+.info-block-article__h3 {
+    font-size: 24px;
+}
+
+.info-block-article__p {
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: 16px;
+    text-indent: 1px;
+    padding-left: 1px;
+}
+
+.info-block-article__a {
+    width: 100%;
+    margin-top: 23px;
+    text-align: right;
+}
+
+.info-block-article_text-shadow {
+    text-shadow: 1px 1px 0 #0f1518;
 }
 
 /* Width 320px */
@@ -115,12 +176,11 @@ input[type=radio]:checked + .head-checkboxes__label:before {
         margin-top: 81px;
     }
 
-    .head-nav-list__item {
+    .head-nav-li {
         display: none;
-        text-shadow: 0 0 10px rgba(255, 255, 255, .5);
     }
 
-    .head-nav-list__item:first-child {
+    .head-nav-li:first-child {
         display: block;
     }
 

@@ -1,11 +1,24 @@
 /* Код для подключения шрифта в /css/stylename.css */
 /* font-family: "LeagueGothicRegular"; */
 @font-face {
-    font-family: "LeagueGothicRegular";
-    src: url("../fonts/LeagueGothicRegular/LeagueGothicRegular.eot");
-    src: url("../fonts/LeagueGothicRegular/LeagueGothicRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/LeagueGothicRegular/LeagueGothicRegular.woff") format("woff"),
-    url("../fonts/LeagueGothicRegular/LeagueGothicRegular.ttf") format("truetype");
+    font-family: 'LeagueGothicRegular';
     font-style: normal;
     font-weight: normal;
+
+    src: url('../fonts/LeagueGothicRegular/LeagueGothicRegular.eot');
+    src: url('../fonts/LeagueGothicRegular/LeagueGothicRegular.eot?#iefix')format('embedded-opentype'),
+    url('../fonts/LeagueGothicRegular/LeagueGothicRegular.woff') format('woff'),
+    url('../fonts/LeagueGothicRegular/LeagueGothicRegular.ttf') format('truetype');
+}
+
+/* font-family: "OpenSansLight"; */
+@font-face {
+    font-family: 'OpenSansLight';
+    font-style: normal;
+    font-weight: normal;
+
+    src: url('../fonts/OpenSansLight/OpenSansLight.eot');
+    src: url('../fonts/OpenSansLight/OpenSansLight.eot?#iefix')format('embedded-opentype'),
+    url('../fonts/OpenSansLight/OpenSansLight.woff') format('woff'),
+    url('../fonts/OpenSansLight/OpenSansLight.ttf') format('truetype');
 }
