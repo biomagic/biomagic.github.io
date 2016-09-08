@@ -103,7 +103,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
 .top {
     padding: 69px 0;
     border-bottom: 1px solid #36283c;
-    background: url('../img/bg320.png') no-repeat;
+    background: url('../img/bg.jpg') no-repeat top center;
     color: #fff;
     z-index: 5;
 }
@@ -347,7 +347,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
 .footer {
     height: 201px;
     padding: 43px 0 149px 0;
-    background: url('../img/bgfooter320.png') no-repeat;
+    background: url('../img/bgFooter.jpg') no-repeat top center;
     text-align: center;
     z-index: 1;
 }
