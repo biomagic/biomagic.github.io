@@ -101,7 +101,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
 /* Top */
 
 .top {
-    padding: 69px 0;
+    padding: 68px 0 71px 0;
     border-bottom: 1px solid #36283c;
     background: url('../img/bg.jpg') no-repeat top center;
     color: #fff;
@@ -134,7 +134,8 @@ input[type=radio]:checked + .radio__label_background_black:before {
 .top-nav-menu__li_home,
 .top-nav-menu__a_home,
 .top-nav-submenu,
-.top-nav-submenu__li {
+.top-nav-submenu__li,
+.top-nav-submenu__a {
     width: 100%;
     line-height: 46px;
 }
@@ -158,6 +159,21 @@ input[type=radio]:checked + .radio__label_background_black:before {
     z-index: 5;
     left: 50%;
     margin-left: -18px;
+}
+
+.underline:after {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    left: -6px;
+    width: calc(100% + 12px);
+    border-bottom: 2px solid #edbfff;
+    content: '';
+    z-index: 5;
+}
+
+.underline:hover:after {
+    display: none;
 }
 
 .top-nav-menu__li_home:hover {
@@ -201,13 +217,12 @@ input[type=radio]:checked + .radio__label_background_black:before {
 
 .top-slider {
     position: relative;
-    top: 128px;
-    padding-bottom: 206px;
+    margin-top: 76px;
+    height: 229px;
 }
 
 .top-slider__header {
     display: table;
-    margin: 0 auto;
 }
 
 .top-slider__p {
@@ -222,16 +237,12 @@ input[type=radio]:checked + .radio__label_background_black:before {
     font-size: 36px;
 }
 
-.slider-arrows__arrow_left {
+.slider-arrows {
     position: absolute;
-    top: 10px;
     left: 0;
-}
-
-.slider-arrows__arrow_right {
-    position: absolute;
-    top: 10px;
-    right: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
 
 /* Articles */
@@ -412,6 +423,20 @@ input[type=radio]:checked + .radio__label_background_black:before {
 /* Media area */
 
 @media(min-width: 480px) {
+
+    /* Top */
+
+    .top {
+        padding-bottom: 62px;
+    }
+
+    .top-slider {
+        background: rgba(0, 0, 0, .3);
+        height: 246px;
+        margin: 68px 0 22px 0;
+        padding: 0 31px 0 40px;
+    }
+
     /* Blog */
 
     .blog-testimonials {
