@@ -231,6 +231,9 @@ input[type=radio]:checked + .radio__label_background_black:before {
 
 .top-slider {
     position: relative;
+}
+
+.top-slider .limit-box {
     height: 217px;
     margin-top: 80px;
 }
@@ -508,16 +511,15 @@ input[type=radio]:checked + .radio__label_background_black:before {
     }
 
     .top-slider {
-
         height: 246px;
-        margin: 68px 0 22px 0;
-        padding: 0 31px 0 40px;
         background: rgba(0, 0, 0, .3);
     }
 
     .top-slider .limit-box {
         justify-content: space-between;
         -ms-flex-pack: justify;
+        height: 100%;
+        padding: 0 31px 0 40px;
     }
 
     .top-slider__iPhone {
