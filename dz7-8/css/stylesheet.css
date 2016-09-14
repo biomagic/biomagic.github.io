@@ -74,6 +74,13 @@ body > *,
     display: none;
 }
 
+/* Wrapper for text */
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
 /* Radio */
 
 .radio__li {
@@ -274,6 +281,8 @@ input[type=radio]:checked + .radio__label_background_black:before {
 
 .articles__div {
     margin-top: 45px;
+    height: 96px;
+    line-height: 24px;
 }
 
 .articles__div_item1:before,
@@ -304,8 +313,8 @@ input[type=radio]:checked + .radio__label_background_black:before {
 }
 
 .articles__a_text-align_right {
-    width: 100%;
-    text-align: right;
+    position: absolute;
+    right: 0;
 }
 
 /* Blog */
@@ -557,6 +566,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
 }
 
 @media(min-width: 768px) {
+
     .blog .limit-box,
     .articles .limit-box {
         flex-direction: row;
@@ -612,6 +622,9 @@ input[type=radio]:checked + .radio__label_background_black:before {
         display: block;
         font-family: 'OpenSansLight', sans-serif;
         font-size: 16px;
+        height: 120px;
+        line-height: 30px;
+        width: 268px;
     }
 
     .top-slider__iPhone-img {
@@ -621,11 +634,12 @@ input[type=radio]:checked + .radio__label_background_black:before {
     /* Articles */
 
     .articles__div {
-        flex-basis: 151px;
+        flex-basis: 152px;
+        height: 170px;
         margin-top: 49px;
-        -ms-flex-preferred-size: 151px;
+        line-height: 24px;
+        -ms-flex-preferred-size: 152px;
     }
-
 
     /* Blog */
 
@@ -734,6 +748,9 @@ input[type=radio]:checked + .radio__label_background_black:before {
 
     .top-slider__text {
         font-size: 18px;
+        height: 180px;
+        line-height: 30px;
+        width: 515px;
     }
 
     .top .radio {
@@ -755,6 +772,16 @@ input[type=radio]:checked + .radio__label_background_black:before {
         background-image: url('../img/item3.png');
     }
 
+    .articles__h3 {
+        font-size: 30px;
+    }
+
+    .articles__div {
+        flex-basis: 227px;
+        height: 145px;
+        line-height: 24px;
+        -ms-flex-preferred-size: 227px;
+    }
 
     /* Blog */
 
