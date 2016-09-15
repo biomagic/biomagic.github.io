@@ -13,6 +13,11 @@
     -ms-flex-item-align: start;
 }
 
+.wrap {
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
 .df-fdcol {
     display: -ms-flexbox;
     display: flex;
@@ -100,9 +105,9 @@
 .df-jccent-fe {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: end;
-        align-items: flex-end;
+    align-items: flex-end;
     justify-content: center;
+    -ms-flex-align: end;
     -ms-flex-align: flex-end;
     -ms-flex-pack: center;
 }
