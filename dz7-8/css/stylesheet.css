@@ -1101,7 +1101,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
     .articles__div_item1:before {
         top: 4px;
         left: -53px;
-        background-position: -7px -17px;
+        background-position: -7px -13px;
     }
 
     .articles__div_item2:before {
@@ -1112,7 +1112,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
     .articles__div_item3:before {
         top: 5px;
         left: -50px;
-        background-position: -51px -18px;
+        background-position: -51px -14px;
     }
 
     .articles__h3 {
@@ -1176,7 +1176,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
         top: 5px;
         left: -22px;
         letter-spacing: -.2px;
-        text-align: right;
+        float: right;
     }
 
     .blog-testimonials {
@@ -1291,3 +1291,4 @@ input[type=radio]:checked + .radio__label_background_black:before {
         letter-spacing: .3px;
     }
 }
+
