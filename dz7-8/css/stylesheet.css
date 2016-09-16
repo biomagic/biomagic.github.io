@@ -275,12 +275,29 @@ input[type=radio]:checked + .radio__label_background_black:before {
     display: none;
 }
 
-.slider-arrows {
+.top-slider__arrows {
     position: absolute;
     top: 5px;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.top-slider__arrows-link:before {
+    content: '';
+    width: 23px;
+    height: 34px;
+    background-image: url('../img/sprite.svg');
+    background-size: 215px;
+    display: block;
+}
+
+.arrow_left:before {
+    background-position: -144px -10px;
+}
+
+.arrow_right:before {
+    background-position: -181px -10px;
 }
 
 /* Articles */
@@ -304,11 +321,11 @@ input[type=radio]:checked + .radio__label_background_black:before {
 .articles__div_item3:before {
     position: absolute;
     top: 2px;
-    left: -49px;
+    left: -50px;
     width: 32px;
     height: 30px;
-    background-image: url('../img/item1.png');
-    background-repeat: no-repeat;
+    background: url('../img/sprite.svg') -7px -17px;
+    background-size: 197px 135px;
     content: '';
 }
 
@@ -332,9 +349,8 @@ input[type=radio]:checked + .radio__label_background_black:before {
     font-size: 18px;
 }
 
-.articles__a_text-align_right {
-    display: block;
-    text-align: right;
+.articles__a_float_right {
+    float: right;
 }
 
 /* Blog */
@@ -571,7 +587,27 @@ input[type=radio]:checked + .radio__label_background_black:before {
         margin-top: 42px;
     }
 
-    .slider-arrows {
+    .top-slider__iPhone-link {
+        position: absolute;
+        top: 97px;
+        right: 67px;
+        z-index: 5;
+    }
+
+    .top-slider__iPhone-link:before {
+        content: '';
+        width: 56px;
+        height: 56px;
+        background: url('../img/sprite.svg') -99px -40px;
+        background-size: 159px;
+        display: block;
+    }
+
+    .top-slider__iPhone-link:hover:before {
+        background-position: -34px -40px;
+    }
+
+    .top-slider__arrows {
         top: 1px;
     }
 
@@ -790,6 +826,22 @@ input[type=radio]:checked + .radio__label_background_black:before {
         position: relative;
     }
 
+    .top-slider__iPhone-link {
+        top: 139px;
+        right: 61px;
+    }
+
+    .top-slider__iPhone-link:before {
+        width: 76px;
+        height: 76px;
+        background-size: 226px;
+        background-position: -140px -55px;
+    }
+
+    .top-slider__iPhone-link:hover:before {
+        background-position: -47px -55px;
+    }
+
     .blick:after {
         position: absolute;
         top: 28px;
@@ -800,7 +852,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
         content: '';
     }
 
-    .slider-arrows {
+    .top-slider__arrows {
         top: 0;
     }
 
@@ -1015,6 +1067,11 @@ input[type=radio]:checked + .radio__label_background_black:before {
         padding: 20px 70px 0 0;
     }
 
+    .top-slider__iPhone-link {
+        top: 160px;
+        right: 131px;
+    }
+
     .blick:after {
         display: none;
     }
@@ -1034,7 +1091,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
     /* Articles */
 
     .articles {
-        padding: 28px 0 49px 62px;
+        padding: 28px 0 48px 62px;
     }
 
     .articles .limit-box {
@@ -1042,19 +1099,20 @@ input[type=radio]:checked + .radio__label_background_black:before {
     }
 
     .articles__div_item1:before {
-        top: 5px;
-        left: -52px;
+        top: 4px;
+        left: -53px;
+        background-position: -7px -17px;
     }
 
     .articles__div_item2:before {
-        top: 7px;
-        left: -51px;
-        background-image: url('../img/item2.png');
+        left: -53px;
+        background-position: -89px -14px;
     }
 
     .articles__div_item3:before {
         top: 5px;
-        background-image: url('../img/item3.png');
+        left: -50px;
+        background-position: -51px -18px;
     }
 
     .articles__h3 {
@@ -1063,21 +1121,22 @@ input[type=radio]:checked + .radio__label_background_black:before {
 
     .articles__p {
         padding-top: 10px;
+        line-height: 24px;
     }
 
     .articles__a {
-        padding: 27px 7px 0 0;
+        padding: 18px 7px 0 0;
     }
 
     .articles__div {
         flex-basis: 227px;
-        height: 152px;
-        line-height: 24px;
+        height: 153px;
+        line-height: 25px;
         -ms-flex-preferred-size: 227px;
     }
 
     .articles__div:nth-child(1) .articles__a {
-        padding: 27px 14px 0 0;
+        padding: 17px 14px 0 0;
     }
 
     /* Blog */
