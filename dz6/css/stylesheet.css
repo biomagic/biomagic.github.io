@@ -1,7 +1,11 @@
 html,
-body,
-.wrapper {
+body {
     height: 100%;
+}
+
+.body {
+    padding-top: 17px;
+    font-family: Arial, sans-serif;
 }
 
 /* Set checkbox styles*/
@@ -43,13 +47,6 @@ select {
     /* for IE */
     -ms-appearance: none;
     appearance: none;
-}
-
-/* Wrapper */
-
-.wrapper {
-    padding-top: 17px;
-    font-family: Arial, sans-serif;
 }
 
 /* Top elements */
@@ -534,7 +531,7 @@ ul.nav-list {
     font-size: 10px;
 }
 
-.seasons li {
+.main .seasons li {
     margin-bottom: 0;
     font-size: 12px;
 }
@@ -678,13 +675,13 @@ ul.nav-list {
     margin-left: 4px;
 }
 
-section h3 {
+.main section h3 {
     color: #154467;
     font-size: 12px;
     font-weight: 800;
 }
 
-section ul li {
+.main section ul li {
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     font-size: 10px;
 }
