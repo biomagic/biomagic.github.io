@@ -201,7 +201,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
 .top-nav-menu__a_home,
 .top-nav-submenu__a {
     width: 100%;
-    line-height: 46px;
+    line-height: 42px;
 }
 
 .top-nav-submenu__li:hover,
@@ -221,7 +221,6 @@ input[type=radio]:checked + .radio__label_background_black:before {
 }
 
 .top-nav-menu__li_home:hover {
-    top: -1px;
     width: 246px;
     margin-left: -123px;
     border: 1px solid rgba(3, 11, 15, .3);
@@ -250,12 +249,14 @@ input[type=radio]:checked + .radio__label_background_black:before {
 }
 
 .top-slider__header {
-    margin-left: 9px;
+    margin-left: 29px;
+    height: 61px;
 }
 
 .top-slider__p {
     font-size: 18px;
     letter-spacing: -.2px;
+    width: 220px;
 }
 
 .top .radio {
@@ -549,7 +550,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
     }
 
     .top-slider__header {
-        margin-left: 0px;
+        margin: -5px 0 0;
     }
 
     .top-slider .limit-box {
@@ -567,6 +568,10 @@ input[type=radio]:checked + .radio__label_background_black:before {
     .top-slider__iPhone-img {
         height: 304px;
         margin-top: 42px;
+    }
+
+    .slider-arrows {
+        top: 1px;
     }
 
     /* Articles */
@@ -592,7 +597,11 @@ input[type=radio]:checked + .radio__label_background_black:before {
 
     .blog-testimonials__h3 {
         font-size: 30px;
-        margin-bottom: 14px;
+        margin: 0 0 14px 4px;
+    }
+
+    .blog-testimonials__span {
+        letter-spacing: -0.4px;
     }
 
     .blog-box .blog-testimonials__p {
@@ -650,9 +659,9 @@ input[type=radio]:checked + .radio__label_background_black:before {
     }
 
     .manufacturers__li {
-        margin-bottom: 24px;
+        margin-bottom: -2px;
         -ms-flex-preferred-size: 32.136%;
-            flex-basis: 32.136%;
+        flex-basis: 32.136%;
     }
 
     /* News categories */
@@ -700,7 +709,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
     /* Top */
 
     .top {
-        padding-bottom: 102px;
+        padding-bottom: 100px;
     }
 
     .top .radio {
@@ -740,8 +749,9 @@ input[type=radio]:checked + .radio__label_background_black:before {
     }
 
     .top-slider__header {
-    top: -14px;
+    top: -7px;
     position: relative;
+    height: 184px;
     }
 
     .top-slider__h3 {
@@ -754,6 +764,8 @@ input[type=radio]:checked + .radio__label_background_black:before {
         position: relative;
         letter-spacing: -0.3px;
         top: 10px;
+        height: 24px;
+        width: 268px;
     }
 
     .top-slider__text {
@@ -773,10 +785,14 @@ input[type=radio]:checked + .radio__label_background_black:before {
         margin-top: -9px;
     }
 
+    .slider-arrows {
+        top: 0px;
+    }
+
     /* Articles */
 
     .articles {
-        padding: 28px 0px 117px 62px;
+        padding: 28px 0px 35px 62px;
     }
 
     .articles__a {
@@ -805,6 +821,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
     .blog-box .blog-testimonials__p {
         width: 94%;
         max-height: 144px;
+        margin: -6px 0 0;
     }
 
     .blog-box .radio {
@@ -842,8 +859,9 @@ input[type=radio]:checked + .radio__label_background_black:before {
 
     .blog-testimonials__h3 {
         font-size: 24px;
-        width: 50%;
+        width: 49%;
         margin-bottom: 8px;
+        margin: 0 0 14px 1px;
     }
 
     /* Manufactureres */
@@ -954,6 +972,7 @@ input[type=radio]:checked + .radio__label_background_black:before {
     .top-slider__header {
         width: 500px;
         top: 14px;
+        height: 252px;
     }
 
     .top-slider__h3 {
@@ -963,7 +982,9 @@ input[type=radio]:checked + .radio__label_background_black:before {
     .top-slider__p {
         font-size: 32px;
         top: 8px;
+        height: 32px;
         letter-spacing: -0.1px;
+        width: auto;
     }
 
     .top-slider__text {
@@ -991,6 +1012,10 @@ input[type=radio]:checked + .radio__label_background_black:before {
     }
 
     /* Articles */
+
+    .articles {
+    padding: 28px 0px 56px 62px;
+    }
 
     .articles .limit-box {
         padding: 3px 27px 0 33px;
