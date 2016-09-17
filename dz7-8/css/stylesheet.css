@@ -48,14 +48,6 @@ body > *,
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-/* Hyphens */
-
-.hyphens {
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    -ms-hyphens: auto;
-}
-
 /* Underline */
 
 .underline:after,
@@ -253,9 +245,9 @@ input[type=radio]:checked + .radio__label_background_black:before {
 
 .top-slider__p {
     width: 220px;
+    height: 19px;
     font-size: 18px;
     letter-spacing: -.2px;
-    height: 19px;
 }
 
 .top .radio {
@@ -282,12 +274,12 @@ input[type=radio]:checked + .radio__label_background_black:before {
 }
 
 .top-slider__arrows-link:before {
-    content: '';
+    display: block;
     width: 23px;
     height: 34px;
     background-image: url('../img/sprite.svg');
     background-size: 215px;
-    display: block;
+    content: '';
 }
 
 .arrow_left:before {
@@ -592,12 +584,12 @@ input[type=radio]:checked + .radio__label_background_black:before {
     }
 
     .top-slider__iPhone-link:before {
-        content: '';
+        display: block;
         width: 56px;
         height: 56px;
         background: url('../img/sprite.svg') -99px -40px;
         background-size: 159px;
-        display: block;
+        content: '';
     }
 
     .top-slider__iPhone-link:hover:before {
@@ -831,8 +823,8 @@ input[type=radio]:checked + .radio__label_background_black:before {
     .top-slider__iPhone-link:before {
         width: 76px;
         height: 76px;
-        background-size: 226px;
         background-position: -140px -55px;
+        background-size: 226px;
     }
 
     .top-slider__iPhone-link:hover:before {
@@ -982,9 +974,9 @@ input[type=radio]:checked + .radio__label_background_black:before {
     }
 
     .footer-nav {
-        -ms-flex-preferred-size: 527px;
-            flex-basis: 527px;
+        flex-basis: 527px;
         margin-bottom: 48px;
+        -ms-flex-preferred-size: 527px;
         -ms-flex-preferred-size: 594px;
     }
 
@@ -1172,8 +1164,8 @@ input[type=radio]:checked + .radio__label_background_black:before {
         display: block;
         top: 5px;
         left: -22px;
-        letter-spacing: -.2px;
         float: right;
+        letter-spacing: -.2px;
     }
 
     .blog-testimonials {
@@ -1288,4 +1280,3 @@ input[type=radio]:checked + .radio__label_background_black:before {
         letter-spacing: .3px;
     }
 }
-
