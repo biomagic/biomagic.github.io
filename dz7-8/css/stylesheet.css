@@ -66,6 +66,15 @@ body > *,
     display: none;
 }
 
+/* Hyphens */
+
+.hyphenate {
+    visibility: visible;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
 /* Wrapper for hide overflow text */
 
 .wrapper {
@@ -310,11 +319,11 @@ input[type=radio]:checked + .radio__label_background_black:before {
 .articles__div_item2:before,
 .articles__div_item3:before {
     position: absolute;
-    top: 2px;
+    top: -2px;
     left: -50px;
     width: 32px;
     height: 30px;
-    background: url('../img/sprite.svg') -7px -17px;
+    background: url('../img/sprite.svg') -7px -13px;
     background-size: 197px 135px;
     content: '';
 }
