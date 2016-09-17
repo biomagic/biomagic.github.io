@@ -5,10 +5,10 @@
     font-style: normal;
     font-weight: normal;
 
-    src: url('../fonts/LeagueGothicRegular/LeagueGothicRegular.eot');
-    src: url('../fonts/LeagueGothicRegular/LeagueGothicRegular.eot?#iefix')format('embedded-opentype'),
-    url('../fonts/LeagueGothicRegular/LeagueGothicRegular.woff') format('woff'),
-    url('../fonts/LeagueGothicRegular/LeagueGothicRegular.ttf') format('truetype');
+    src: url('../fonts/LeagueGothicRegular.eot');
+    src: url('../fonts/LeagueGothicRegular.eot?#iefix')format('embedded-opentype'),
+    url('../fonts/LeagueGothicRegular.woff') format('woff'),
+    url('../fonts/LeagueGothicRegular.ttf') format('truetype');
 }
 
 /* font-family: "OpenSansLight"; */
@@ -17,8 +17,21 @@
     font-style: normal;
     font-weight: normal;
 
-    src: url('../fonts/OpenSansLight/OpenSansLight.eot');
-    src: url('../fonts/OpenSansLight/OpenSansLight.eot?#iefix')format('embedded-opentype'),
-    url('../fonts/OpenSansLight/OpenSansLight.woff') format('woff'),
-    url('../fonts/OpenSansLight/OpenSansLight.ttf') format('truetype');
+    src: url('../fonts/OpenSansLight.eot');
+    src: url('../fonts/OpenSansLight.eot?#iefix')format('embedded-opentype'),
+    url('../fonts/OpenSansLight.woff') format('woff'),
+    url('../fonts/OpenSansLight.ttf') format('truetype');
+}
+
+
+/* font-family: "OpenSansExtraBold"; */
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    font-style: normal;
+    font-weight: 600;
+
+    src: url('../fonts/OpenSansExtraBold.eot');
+    src: url('../fonts/OpenSansExtraBold.eot?#iefix')format('embedded-opentype'),
+    url('../fonts/OpenSansExtraBold.woff') format('woff'),
+    url('../fonts/OpenSansExtraBold.ttf') format('truetype');
 }
