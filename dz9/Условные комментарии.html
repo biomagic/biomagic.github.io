@@ -1,0 +1,788 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0085)http://www.xiper.net/collect/html-and-css-tricks/css-tricks/uslovnie-commentarii.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head profile="http://www.w3.org/2005/10/profile"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="http://xiper.net/">--><base href=".">
+<title>Условные комментарии</title>
+<link rel="icon" type="image/png" href="http://xiper.net/img/favicon.png">
+
+<meta name="Keywords" content="Условные комментарии">
+<meta name="Description" content="Условные комментарии">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"> 
+<link rel="stylesheet" type="text/css" href="./Условные комментарии_files/main-2.css">
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/css/ie7-2.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="./Условные комментарии_files/tricks.css"><script type="text/javascript" async="" src="./Условные комментарии_files/ga.js.Без названия"></script><script type="text/javascript" src="./Условные комментарии_files/jquery.min.js.Без названия"></script>
+<script type="text/javascript" src="./Условные комментарии_files/main-1.7.js.Без названия" charset="utf-8"></script>
+<script type="text/javascript" src="./Условные комментарии_files/google_service.js.Без названия">
+</script>
+<script type="text/javascript">
+GS_googleAddAdSenseService("ca-pub-0492713895610740");
+GS_googleEnableAllServices();
+</script><script src="./Условные комментарии_files/google_ads.js.Без названия"></script>
+<!--script type='text/javascript'>
+GA_googleAddSlot("ca-pub-0492713895610740", "footer");
+GA_googleAddSlot("ca-pub-0492713895610740", "sidebar");
+GA_googleAddSlot("ca-pub-0492713895610740", "header");
+GA_googleFetchAds();
+</script-->
+
+<script type="text/javascript">
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script><script src="./Условные комментарии_files/gpt.js.Без названия"></script><script id="gpt-impl-0.4643592783344008" src="./Условные комментарии_files/pubads_impl_95.js.Без названия"></script><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-4/html/container.html">
+
+<script type="text/javascript">
+googletag.defineSlot('/7124891/header', [728, 90], 'div-gpt-ad-1388397566626-0').addService(googletag.pubads());
+googletag.defineSlot('/7124891/sidebar', [250, 250], 'div-gpt-ad-1388397822729-0').addService(googletag.pubads());
+googletag.defineSlot('/7124891/footer', [728, 90], 'div-gpt-ad-1412405073803-0').addService(googletag.pubads());
+googletag.pubads().enableSyncRendering();
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+</script>
+
+<script type="text/javascript" src="./Условные комментарии_files/sh-core-min.js.Без названия"></script><link rel="alternate" type="application/rss+xml" title="xiper.net - основы и секреты front-end разработки" href="http://xiper.net/rss">
+<style type="text/css">/*.lleo_errorSelection *::-moz-selection,
+.lleo_errorSelection *::selection,
+.lleo_errorSelection *::-webkit-selection {
+    background-color: red !important;
+    color: #fff !important;;
+}*/
+
+#lleo_dialog,
+#lleo_dialog * {
+    color: #000 !important;
+    font: normal 13px Arial, Helvetica !important;
+    line-height: 15px !important;
+    margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none 0 !important;
+	position: static !important;
+	vertical-align: baseline !important;
+	overflow: visible !important;
+	width: auto !important;
+	height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+	float: none !important;
+	visibility: visible !important;
+	text-align: left !important;
+    text-transform: none !important;
+	border-collapse: separate !important;
+	border-spacing: 2px !important;
+    box-sizing: content-box !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    letter-spacing: normal !important;
+    -webkit-filter: none !important;
+    -moz-filter: none !important;
+    filter: none !important;
+}
+#lleo_dialog *:before,
+#lleo_dialog *:after {
+    content: '';
+}
+
+#lleo_dialog iframe {
+	height: 0 !important;
+	width: 0 !important;
+}
+
+#lleo_dialog {
+    position: absolute !important;
+    background: #fff !important;
+    border: solid 1px #ccc !important;
+    padding: 7px 0 0 !important;
+    left: -999px;
+    top: -999px;
+    width: 440px !important;
+    overflow: hidden;
+    display: block !important;
+    z-index: 999999999 !important;
+    box-shadow: 8px 16px 30px rgba(0, 0, 0, 0.16) !important;
+    border-radius: 3px !important;
+    opacity: 0 !important;
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    transform: translateY(15px);
+}
+#lleo_dialog.lleo_show_small {
+    width: 150px !important;
+}
+#lleo_dialog.lleo_show {
+    opacity: 1 !important;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s !important;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s !important;
+    -ms-transition: -ms-transform 0.3s, opacity 0.3s !important;
+    -o-transition: -o-transform 0.3s, opacity 0.3s !important;
+    transition: transform 0.3s, opacity 0.3s !important;
+}
+#lleo_dialog.lleo_collapse {
+    opacity: 0 !important;
+    -webkit-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -moz-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -ms-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -o-transform: scale(0.25, 0.1) translate(-550px, 100px);
+    transform: scale(0.25, 0.1) translate(-550px, 100px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.4s !important;
+    -moz-transition: -moz-transform 0.4s, opacity 0.4s !important;
+    -ms-transition: -ms-transform 0.4s, opacity 0.4s !important;
+    -o-transition: -o-transform 0.4s, opacity 0.4s !important;
+    transition: transform 0.4s, opacity 0.4s !important;
+}
+#lleo_dialog input::-webkit-input-placeholder {
+    color: #aaa !important;
+}
+#lleo_dialog .lleo_has_pic #lleo_word {
+	margin-right: 80px !important;
+}
+#lleo_dialog #lleo_translationsContainer1 {
+	position: relative !important;
+}
+#lleo_dialog #lleo_translationsContainer2 {
+	padding: 7px 0 0 !important;
+	vertical-align: middle !important;
+}
+#lleo_dialog #lleo_word {
+    color: #000 !important;
+    margin: 0 5px 2px 0 !important;
+    /*float: left !important;*/
+}
+#lleo_dialog .lleo_has_sound #lleo_word {
+    margin-left: 30px !important;
+}
+#lleo_dialog #lleo_text {
+    font-weight: bold !important;
+    color: #d56e00 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+/*
+#lleo_dialog #lleo_text.lleo_known {
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
+*/
+/*#lleo_dialog #lleo_closeBtn {
+    position: absolute !important;
+    right: 6px !important;
+    top: 5px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 0 !important;
+    color: #aaa !important;
+    display: block !important;
+	z-index: 9999999999 !important;
+	width: 7px !important;
+	height: 7px !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}*/
+
+#lleo_dialog #lleo_optionsBtn {
+    position: absolute !important; 
+    right: 3px !important;
+    top: 5px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    color: #aaa !important;
+    padding: 2px !important;
+	display: none;
+}
+    #lleo_dialog.lleo_optionsShown #lleo_optionsBtn {
+        display: block !important;
+    }
+    #lleo_dialog #lleo_optionsBtn img {
+        width: 12px !important;
+        height: 12px !important;
+    }
+#lleo_dialog #lleo_sound {
+    float: left !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin-left: 9px !important;
+    margin-right: 3px !important;
+    background: 0 0 no-repeat !important;
+    cursor: pointer !important;
+    display: none !important;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAfNJREFUeNq0U01IVFEU/u57Oo5WhBRIBBptykWLYBa2soWiEKQQEbrSFsGbVRQKQc2iFqGitXqvjQxCoCJCqyI0aBUtZILaJNUuYWYWo8HovJ/707nP94bnz0rxwvfOuefd8517fi5TSuE4i50YwZ3l37ZhNlpgzFkaaM/G9sHF1YskNrT+7l4PjMOcb78t2JL71uxgB+2UlfxHTtq5N94fIOh/88kWgWfl73ZCSQkpeGg3H091JY6dI2S00qA/N3KO3dDUYhFgEmZGurG+w9FqApIHsVM7kaTF9Nhn0r8Q7hPWQgIRuNaH3AMUA4W/Lkdh04cpFS43G0TgxQTvCdMETVAk3KynIHwXZU/ge8XDt7KH9bKLjU0P2zVO5LsEpSejVRJ9UR18EtfqKegovs9R3Q6w9c/H1o4Aa2Jwm1lIvn9RJ4w9RdRRzqcYrpwycCll4Cy1lnkS3Bc6vfBg28v8aRIfI78zhB/1GygROH3jLyyzMQ0zlUZuZBSlKkeLoegGtTjYLcJ8pF+NakHOFC2J6w+f25mxSfWrWFF/ShXVPTGvtN14NNkVnxlYWJkgZEL7/vwKr55lKSVnaGYWkuYgrgG172uUv47+U7fw0EHaJXmalUQy/HqO6lBzEsVjJC4Q8kd6TETQpjuaGOvjv8b/AgwA/ij1XMx58NIAAAAASUVORK5CYII=) !important;
+}
+#lleo_dialog .lleo_has_sound #lleo_sound {
+    display: block !important;
+}
+
+#lleo_dialog #lleo_soundWave {
+    border: solid 5px #4495CC !important;
+    border-radius: 5px !important;
+    position: absolute !important;
+    left: -5px !important;
+    top: -5px !important;
+    right: -5px !important;
+    bottom: -5px !important;
+    z-index: 0 !important;
+    opacity: 0.9 !important;
+    display: none !important;
+}
+    #lleo_dialog #lleo_soundWave.lleo_beforePlaying {
+        display: block !important;
+    }
+    #lleo_dialog #lleo_soundWave.lleo_playing {
+        opacity: 0 !important;
+        border-width: 20px !important;
+        border-radius: 30px !important;
+
+        -webkit-transform: scale(1.07,1.1) !important;
+        -moz-transform: scale(1.07,1.1) !important;
+        -ms-transform: scale(1.07,1.1) !important;
+        transform: scale(1.07,1.1) !important;
+
+        -webkit-transition: all 0.6s !important;
+        -moz-transition: all 0.6s !important;
+        -ms-transition: all 0.6s !important;
+        transition: all 0.6s !important;
+    }
+
+
+#lleo_dialog #lleo_picOuter {
+    position: absolute !important;
+    float: right !important;
+    top: 4px;
+    right: 5px;
+    z-index: 9 !important;
+    display: none !important;
+    width: 100px !important;
+}
+    #lleo_dialog.lleo_optionsShown #lleo_picOuter {
+        right: 25px;
+    }
+#lleo_dialog .lleo_has_pic #lleo_picOuter {
+    display: block !important;
+}
+    #lleo_dialog #lleo_picOuter:hover {
+        width: auto !important;
+        z-index: 11 !important;
+    }
+#lleo_dialog #lleo_pic,
+#lleo_dialog #lleo_picBig {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    border: solid 2px #fff !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+    z-index: 1 !important;
+}
+#lleo_dialog #lleo_pic {
+	position: relative !important;
+    border: none !important;
+	width: 30px !important;
+}
+#lleo_dialog #lleo_picBig {
+    box-shadow: -1px 2px 4px rgba(0,0,0,0.3);
+    z-index: 2 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+    #lleo_dialog #lleo_picOuter:hover #lleo_picBig {
+        visibility: visible !important;
+        opacity: 1 !important;
+        -webkit-transition: opacity 0.3s !important;
+        -webkit-transition-delay: 0.3s !important;
+    }
+#lleo_dialog #lleo_transcription {
+    margin: 0 80px 4px 31px !important;
+    color: #aaaaaa !important;
+}
+#lleo_dialog .lleo_no_trans {
+    color: #aaa !important;
+}
+
+#lleo_dialog .ll-translation-counter {
+	float: right !important;
+    font-size: 11px !important;
+    color: #aaa !important;
+    padding: 2px 2px 1px 10px !important;
+}
+
+#lleo_dialog .ll-translation-text {
+	float: left !important;
+	/*width: 80% !important;*/
+}
+
+#lleo_dialog #lleo_trans a {
+    color: #3F669F !important;
+    text-decoration: none !important;
+    text-overflow: ellipsis !important;
+    padding: 1px 4px !important;
+    overflow: hidden !important;
+    float: left !important;
+    width: 320px !important;
+}
+
+#lleo_dialog .ll-translation-item {
+    color: #3F669F !important;
+    border: solid 1px #fff !important;
+    padding: 3px !important;
+    width: 100% !important;
+    float: left !important;
+	-moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+#lleo_dialog .ll-translation-item:hover {
+	border: solid 1px #9FC2C9 !important;
+    background: #EDF4F6 !important;
+	cursor: pointer !important;
+}
+#lleo_dialog .ll-translation-item:hover .ll-translation-counter {
+	color: #83a0a6 !important;
+}
+
+#lleo_dialog .ll-translation-marker {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAWSURBVBhXY7RPm/+fAQkwIXNAbMICAJQ8AkvqWg/SAAAAAElFTkSuQmCC) !important;
+    display: inline-block !important;
+    width: 4px !important;
+    height: 4px !important;
+    margin: 7px 5px 2px 2px !important;
+    float: left !important;
+}
+
+#lleo_dialog #lleo_icons {
+    color: #aaa !important;
+    font-size: 11px !important;
+    background: #f8f8f8 !important;
+    padding: 10px 10px 10px 16px !important;
+}
+#lleo_icons a {
+    display: inline-block !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 10px -4px 3px !important;
+    text-decoration: none !important;
+    opacity: 0.5 !important;
+    background: url(data:image/png;base64,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) !important;
+}
+#lleo_icons a:hover {
+    opacity: 1 !important;
+}
+#lleo_icons a.lleo_google     {background-position:-34px 0 !important;}
+#lleo_icons a.lleo_multitran  {background-position:-64px 0 !important;}
+#lleo_icons a.lleo_lingvo     {background-position:-51px 0 !important; width: 12px !important;}
+#lleo_icons a.lleo_dict       {background-position:-17px 0 !important;}
+#lleo_icons a.lleo_linguee    {background-position:-81px 0 !important;}
+#lleo_icons a.lleo_michaelis  {background-position:-98px 0 !important;}
+
+#lleo_dialog #lleo_contextContainer {
+    margin: 0 !important;
+    padding: 3px 15px 8px 10px !important;
+    background: #eee !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)) !important;
+    background: -moz-linear-gradient(-90deg, #fff, #eee) !important;
+    border-bottom: solid 1px #ddd !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    display: none !important;
+    overflow: hidden !important;
+}
+#lleo_dialog .lleo_has_context #lleo_contextContainer {
+    display: block !important;
+}
+#lleo_dialog #lleo_context {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    line-height: 12px !important;
+    font-size: 11px !important;
+    margin-left: 2px !important;
+}
+#lleo_dialog #lleo_context b {
+    line-height: 12px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 11px !important;
+}
+/*#lleo_dialog #lleo_gBrand {
+    color: #aaa !important;
+    font-size: 10px !important;
+    *//*padding-right: 52px !important;*//*
+    padding-bottom: 14px !important;
+    margin: -3px 4px 0 4px !important;
+    background: left bottom url(data:image/png;base64,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) no-repeat !important;
+    display: inline-block !important;
+    float: right !important;
+}
+#lleo_dialog #lleo_gBrand.hidden {
+    display: none !important;
+}*/
+#lleo_dialog #lleo_translateContextLink {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ddd)) !important;
+    background: -moz-linear-gradient(-90deg, #f4f4f4, #ddd) !important;
+    border: solid 1px !important;
+    box-shadow: 1px 1px 0 #f6f6f6 !important;
+    border-color: #999 #aaa #aaa #999 !important;
+    -moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+    padding: 0 3px !important;
+    font-size: 11px !important;
+    text-decoration: none !important;
+    margin: 1px 5px 0 !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+}
+#lleo_dialog #lleo_translateContextLink:hover {
+    background: #f8f8f8 !important;
+}
+#lleo_dialog #lleo_translateContextLink.hidden {
+    visibility: hidden !important;
+}
+
+#lleo_dialog #lleo_setTransForm {
+    display: block !important;
+    margin-top: 3px !important;
+    padding-top: 5px !important;
+    /* Set position and background because the form might be overlapped by an image when no translations */
+    position: relative !important;
+    background: #fff !important;
+    z-index: 10 !important;
+    padding-bottom: 10px !important;
+    padding-left: 16px !important;
+}
+#lleo_dialog .lleo-custom-translation {
+    padding: 4px 5px !important;
+    border: solid 1px #ddd !important;
+	border-radius: 2px !important;
+    width: 90% !important;
+    min-width: 270px !important;
+    background: -webkit-gradient(linear, 0 0, 0 20, from(#f1f1f1), to(#fff)) !important;
+    background: -moz-linear-gradient(-90deg, #f1f1f1, #fff) !important;
+	font: normal 13px Arial, Helvetica !important;
+	line-height: 15px !important;
+}
+#lleo_dialog .lleo-custom-translation:hover {
+    border: solid 1px #aaa !important;
+}
+#lleo_dialog .lleo-custom-translation:focus {
+    background: #FFFEC9 !important;
+}
+
+#lleo_dialog *.hidden {
+    display: none !important;
+}
+
+#lleo_dialog .infinitive{
+    color: #D56E00 !important;
+    text-decoration: none;
+    border-bottom: 1px dotted #D56E00 !important;
+}
+#lleo_dialog .infinitive:hover{
+    border: none !important;
+}
+
+#lleo_dialog .lleo_separator {
+    height: 1px !important;
+    background: #eee;
+    margin-top: 10px !important;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,#eee 8%,rgba(255,255,255,1) 80%) !important;
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, #eee 8%, rgba(255,255,255,1) 80%) !important;
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%,#eee 8%,rgba(255,255,255,1) 80%) !important;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,#eee 8%,rgba(255,255,255,1) 80%) !important;
+}
+#lleo_dialog #lleo_trans {
+    /*border-top: 1px solid #eeeeee !important;*/
+    padding: 5px 30px 0 14px !important;
+    zoom: 1;
+}
+
+#lleo_dialog .lleo_clearfix {
+	display: block !important;
+	clear: both !important;
+	visibility: hidden !important;
+	height: 0 !important;
+	font-size: 0 !important;
+}
+
+
+#lleo_dialog #lleo_picOuter table {
+    width: 44px !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    vertical-align: middle !important;
+}
+
+#lleo_dialog #lleo_picOuter td {
+    width: 38px !important;
+    height: 38px !important;
+    /*border: 1px solid #eeeeee !important;*/
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+#lleo_dialog #lleo_picOuter td div {
+	height: 38px !important;
+	overflow: hidden !important;
+}
+
+#lleo_dialog .lleo_empty {
+    margin: 0 5px 7px !important;
+}
+
+#lleo_youtubeExportBtn {
+    margin-left: 10px;
+    height: 24px;
+}
+    #lleo_youtubeExportBtn i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: 0 0 url(https://d144fqpiyasmrr.cloudfront.net/plugins/all/images/i16.png) !important;
+    }
+    #lleo_youtubeExportBtn .yt-uix-button-content {
+        font-size: 12px;
+        line-height: 2px;
+    }
+
+
+/*** Parsed Lyrics Content *****************************/
+
+.lleo_lyrics tran {
+    background: transparent !important;
+    border-radius: 2px !important;
+    text-shadow: none !important;
+    cursor: pointer !important;
+}
+    .lleo_lyrics tran:hover {
+        color: #fff !important;
+        background: #C77213 !important;
+        -webkit-transition: all 0.1s !important;
+        -moz-transition: all 0.1s !important;
+        -ms-transition: all 0.1s !important;
+        -o-transition: all 0.1s !important;
+        transition: all 0.1s !important;
+    }
+
+.lleo_songName {
+    border: solid 1px #ffd47c;
+    background: #fff1c2;
+    border-radius: 2px;
+}
+
+.lleo_hidden_iframe {
+    visibility: hidden;
+}</style></head>
+<body>
+    
+<!--main wrap-->
+<div class="mainWrap">
+<div class="topPanel">
+<!--script type='text/javascript'>
+GA_googleFillSlot("header");
+</script-->
+<div id="div-gpt-ad-1388397566626-0" style="width:728px; height:90px; margin: 0 auto">
+<script type="text/javascript">
+googletag.display('div-gpt-ad-1388397566626-0');
+</script><script type="text/javascript" src="https://securepubads.g.doubleclick.net/gampad/ads?gdfp_req=1&amp;correlator=3145310236029807&amp;output=json_html&amp;callback=googletag.impl.pubads.setAdContentsBySlotForSync&amp;impl=ss&amp;json_a=1&amp;eid=108809080%2C108809134%2C108809145%2C108809137&amp;sc=0&amp;sfv=1-0-4&amp;iu_parts=7124891%2Cheader%2Csidebar%2Cfooter&amp;enc_prev_ius=%2F0%2F1%2C%2F0%2F2%2C%2F0%2F3&amp;prev_iu_szs=728x90%2C250x250%2C728x90&amp;cookie_enabled=1&amp;lmt=1474135016&amp;dt=1474135016330&amp;cc=100&amp;frm=20&amp;biw=1366&amp;bih=589&amp;oid=3&amp;adks=2838982678%2C1387733545%2C2031942251&amp;gut=v2&amp;ifi=1&amp;u_tz=180&amp;u_his=1&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_nplug=5&amp;u_nmime=7&amp;u_sd=1&amp;flash=23.0.0&amp;url=http%3A%2F%2Fwww.xiper.net%2Fcollect%2Fhtml-and-css-tricks%2Fcss-tricks%2Fuslovnie-commentarii.html&amp;dssz=11&amp;icsg=32&amp;std=0&amp;csl=50&amp;vrg=95&amp;vrp=95&amp;ga_vid=1106325517.1468948059&amp;ga_sid=1474134920&amp;ga_hid=198583377&amp;ga_fc=true"></script>
+</div>
+
+</div><!--content-->
+<div class="contentWrap">
+<div class="content">
+<h1>Условные комментарии</h1>
+<div class="artInfo">
+    Автор: <span>Евгений Рыжков</span>  Дата публикации: 02.02.2009</div>
+<p><strong>Условные комментарии</strong> — специальная конструкция, содержимое которой предназначено только для браузера Internet Explorer. Остальные браузеры это воспринимают как <a href="http://www.xiper.net/manuals/html/tags/HTMLcomment.html" title="Прочитать о комментариях в HTML">обычный комментарий</a>.</p>
+<h3>Синтаксис</h3>
+<div class="codeHeadHTML">HTML</div><div class="codeExample codeHTML">
+<div id="highlighter_74350" class="syntaxhighlighter  "><div class="bar "><div class="toolbar"><a href="http://xiper.net/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_74350_clipboard" type="application/x-shockwave-flash" title="скопировать код в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_74350" menu="false" src="swf/clipboard.swf"></div><a href="http://xiper.net/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://xiper.net/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines no-wrap"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="comments">&lt;!--[if условие]&gt; HTML код &lt;![endif]--&gt;</code></td></tr></tbody></table></div></div></div>
+</div>
+<p>Для браузеров поддерживающих условные комментарии. Проходит валидацию.</p>
+<div class="codeHeadHTML">HTML</div><div class="codeExample codeHTML">
+<div id="highlighter_872116" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://xiper.net/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_872116_clipboard" type="application/x-shockwave-flash" title="скопировать код в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_872116" menu="false" src="swf/clipboard.swf"></div><a href="http://xiper.net/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://xiper.net/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines no-wrap"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="plain">&lt;![if expression]&gt; HTML код &lt;![endif]&gt;</code></td></tr></tbody></table></div></div></div>
+</div>
+<p>Для браузеров не поддерживающих условные комментарии. Не проходит валидацию (этот недостаток устраняется с помощью нехитрого javascript: <a href="http://www.xiper.net/collect/js-plugins/browser-detect/browser-name-and-version.html">определяем браузер</a> и вставляем нужный код). </p>
+<h3>Условия</h3>
+<table>
+<tbody><tr><th width="50">Элемент</th><th width="50">Пример</th><th style="text-align: center;">Значение</th></tr>
+<tr><td width="50">IE</td><td width="50">[if IE]</td><td>Единственное поддерживаемое сейчас свойство IE, равное версии Internet Explorer.</td></tr>
+<tr><td width="50">value</td><td width="50">[if IE 7]</td><td>Целое или дробное число обозначающее версию браузера. Выражение истинно если число совпадает с&nbsp;версией браузера. </td></tr>
+<tr><td width="50">!</td><td width="50">[if !IE]</td><td>Оператор отрицания (NOT). Возвращает значение обратное логическому значению аргумента.</td></tr>
+<tr><td width="50">lt</td><td width="50">[if lt IE 5.5]</td><td>Меньше (less-than). Возвращает true если первый аргумент меньше второго.</td></tr>
+<tr><td width="50">lte</td><td width="50">[if lte IE 6]</td><td>Меньше либо равно (less-than or equal). Возвращает true если первый аргумент меньше либо равен второму.</td></tr>
+<tr><td width="50">gt</td><td width="50">[if gt IE 5]</td><td>Больше (greater-than). Возвращает true если первый аргумент больше второго.</td></tr>
+<tr><td width="50">gte</td><td width="50">[if gte IE 7]</td><td>Больше либо равно (greater-than or equal). Возвращает true если первый аргумент больше либо равен второму.</td></tr>
+<tr><td width="50">( )</td><td width="50">[if !(IE 7)]</td><td>Скобки позволяют выделить подвыражения в&nbsp;сложном выражении. </td></tr>
+<tr><td width="50">&amp;</td><td width="50"><span style="white-space: nowrap;">[if (gt IE 5)&amp;(lt IE 7)]</span></td><td>Оператор AND. Возвращает true если оба подвыражения истинны.</td></tr>
+<tr><td width="50">|</td><td width="50">[if (IE 6)|(IE 7)]</td><td>Оператор OR. Возвращает true если одно их&nbsp;подвыражений истинно.</td></tr>
+<tr><td width="50">true</td><td width="50">[if true]</td><td>Всегда true.</td></tr>
+<tr><td width="50">false</td><td width="50">[if false]</td><td>Всегда false.</td></tr>
+</tbody>
+</table>
+<h3>Примеры</h3>
+<div class="codeHeadHTML">HTML</div><div class="codeExample codeHTML">
+<div id="highlighter_250394" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://xiper.net/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_250394_clipboard" type="application/x-shockwave-flash" title="скопировать код в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_250394" menu="false" src="swf/clipboard.swf"></div><a href="http://xiper.net/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://xiper.net/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines no-wrap"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="comments">&lt;!--[if IE 6]&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="comments">&lt;p&gt;Это можно будет увидеть только в IE6.&lt;/p&gt;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="comments">&lt;![endif]--&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="plain">&lt;![if !IE]&gt;Это увидят все браузеры кроме IE&lt;![endif]&gt;</code></td></tr></tbody></table></div></div></div>
+</div>
+<p>Основное применение условных комментариев — исправление ошибок Internet Explorer, не прибегая к <a href="http://www.xiper.net/collect/html-and-css-tricks/css-tricks/css-hacks.html">хакам</a>. Для этого подключаем файлы стилей специально написанные для IE.</p>
+<div class="codeHeadHTML">HTML</div><div class="codeExample codeHTML">
+<div id="highlighter_709527" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><a href="http://xiper.net/#viewSource" title="view source" class="item viewSource" style="width: 16px; height: 16px;">view source</a><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_709527_clipboard" type="application/x-shockwave-flash" title="скопировать код в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_709527" menu="false" src="swf/clipboard.swf"></div><a href="http://xiper.net/#printSource" title="print" class="item printSource" style="width: 16px; height: 16px;">print</a><a href="http://xiper.net/#about" title="?" class="item about" style="width: 16px; height: 16px;">?</a></div></div><div class="lines no-wrap"><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="comments">&lt;!--[if IE 6]&gt;&lt;link href="path-to/ie6.css" rel="stylesheet" type="text/css"/&gt;&lt;![endif]--&gt;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="comments">&lt;!--[if IE 7]&gt;&lt;link href="path-to/ie7.css" rel="stylesheet" type="text/css"/&gt;&lt;![endif]--&gt;</code></td></tr></tbody></table></div></div></div>
+</div>
+<p>Плюсы:</p>
+<ul>
+<li>предсказуемость поведения в будущих версиях браузера (чего не скажешь о CSS хаках)</li>
+<li>валидность кода</li>
+</ul>
+<p>Недостатки:</p>
+<ul>
+<li>увеличивается время на разработку и отладку (один файл править проще и быстрей)</li>
+<li>увеличивается время загрузки страниц (для IE за счет дополнительного файла)</li>
+</ul>
+<p>Источники:</p>
+<ul>
+<li>MSDN ::  <a href="http://msdn.microsoft.com/en-us/library/ms537512.aspx">About Conditional Comments</a></li>
+<li>designformasters.info <a href="http://designformasters.info/posts/conditional-comments/">Условные комментарии</a> (спасибо за перевод)</li>
+</ul>
+<h3>По теме</h3>
+<ul>
+<li><a href="http://www.xiper.net/collect/html-and-css-tricks/css-tricks/css-hacks.html">CSS хаки</a> — CSS конструкции, которые понимают одни браузеры и игнорируют другие</li>
+<li><a href="http://www.xiper.net/manuals/html/meta-tags/http-equiv/x-UA-Compatible.html">мета тег X-UA-Compatible</a> — задает режим отображения страниц для IE</li>
+<li><a href="http://www.xiper.net/collect/html-and-css-tricks/css-tricks/conditional-css.html">условные CSS</a></li>
+</ul></div>
+</div>
+<!--/content-->
+<!--side bar-->
+    <div class="sideBar">
+        <div class="htmlAndCSSTricksSubMenu">
+            <ul><li><span class="minus">CSS приемы</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/twitching-site">«Дергание» сайта</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/background-position-so-smesheniem">background position со смещением</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/clearfix">clearfix</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/css-opacity">CSS прозрачность</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/css-hacks">CSS хаки</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/rgba">RGBA — CSS полупрозрачность</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/zatemnenie-fona">Затемнение фона</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/cross-hr">Кроссбраузерный &lt;hr /&gt;</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/reset-margin-padding">Обнуление отступов</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/link-order-desc">Порядок описания ссылок</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/preload-images">Прелоад изображений</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/reset-style-width-css">Сброс стилей</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/sokrasheniya-v-css">Сокращения в CSS</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/dotted-border-focus-elements">Убираем рамку с эл-ов в фокусе</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-tricks/conditional-css">Условные CSS</a></li><li><strong id="leftCurent_1">Условные комментарии</strong></li></ul></li><li><span>CSS эффекты</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/css-effects/rotate-around-its-axis-css3">Поворот вокруг своей оси</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/css-effects/css3-flip">Поворот объекта вокруг свой</a></li></ul></li><li><span style="color: rgb(0, 0, 0);">Верстка форм</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/taxtarea-resize">Resize для textarea в Safari и Chrome</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/blochnaya-verstka-form">Блочная верстка форм</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/kastomnie-checkbox-i-radio-na-css">Кастомные checkbox и radio на CSS</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/cross-browser-input-and-textarea">Кросбраузерные input и textarea</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/crossbrowser-button">Кроссбраузерный button</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/nice-checkbox">Нестандартные checkbox</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/nice-radio">Нестандартные radio</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/nice-select-jquery">Нестандартные select</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/cusel-multiple">Нестандартные select multiple</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/nestandartnie-poya-vibora-fayla">Нестандартные поля выбора файла</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/nestandartnie-tekstovie-poya">Нестандартные текстовые поля</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/about-cross-browser-placeholder">О кроссбраузерности placeholder</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/margin-checkbox-and-radio">Отступы у checkbox и radio</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/design-input-type-search">Оформление input type=search</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/rubber-button">Резиновая кнопка</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/verstka-form/text-in-field-type-password">Текст в поле  type="password"</a></li></ul></li><li><span style="color: rgb(0, 0, 0);">Каркас верстки</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/karkas-verstki/blocks-of-equal-height-in-row">Блоки равной высоты в строке</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/karkas-verstki/kolonki-ravnoy-visoty">Колонки равной высоты</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/karkas-verstki/podval-k-nizu">Прижимаем подвал к низу</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/karkas-verstki/back-in-wrap">Ресайз окна: потомок перерос родителя</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/karkas-verstki/sait-v-centre">Сайт в центре экрана</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/karkas-verstki/fix-colonka-rezinovaya-clear-both">Фиксированная колонка + резиновая + clear:both</a></li></ul></li><li><span>Контент</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/content/css-ribbon">CSS 3D лента</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/css3-tooltips">CSS3 всплывающие подсказки</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/img-in-the-block">IMG внутри блока — убираем странный отступ</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/img-hover">IMG: меняем рисунок при наведении</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/css3-accordion">Аккордеон на чистом CSS3</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/target-blank">Валидный target="_blank"</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/imposition-of-ratings">Верстка рейтингов</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/table-of-contents">Верстка содержания</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/insert-symbols">Вставка спецсимволов в генерируемый контент</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/insert-arrows">Вставка стрелок</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/li-noclass">Индивидуальные стили для li. Избавляемся от классов.</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/scaled-image-in-scaled-column">Масштабируемая картинка в резиновой колонке</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/css3-multi-column">Многоколоночный текст на CSS3</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/non-standard-underlining">Нестандартное подчеркивание</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/overflow-and-orphans">Отменяем обтекание текстом картинки</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/oformlinie-vneshnih-ssylok">Оформление внешних ссылок</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/decor-images-with-align">Оформление изображений по align</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/custom-ol">Оформляем «ol»</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/proper-news-announcements">Правильные анонсы новостей</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/content/dl-impossible">Список определений. Требуем невозможного.</a></li></ul></li><li><span>Лекарства для</span><ul style="display: none;"><li><span>Firefox</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/firefox/tormoza-ff-moz-box-shadow-moz-border-radius">-moz-box-shadow и -moz-border-radius - это кошмар CPU</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/firefox/position-within-a-button">Позиционирование внутри button</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/firefox/shirina-input-type-file">Ширина input type=file</a></li></ul></li><li><span>IE</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/IE/bug-onload-ie9">Onload в IE9</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/IE/z-index-ie6-7">z-index в IE6-7</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/IE/text-and-alpha-filter-bug">Баг с текстом при применении Alpha фильтра</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/IE/zoomed-and-pie">Масштабирование и PIE</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/IE/submit-in-ie">Отступы в кнопках в IE6-7</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/IE/em-bug">Проблемы с em</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/IE/after-before-for-ie">Эмуляция after и before для IE 6-7</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/IE/data-url-ie">Эмуляция data:URL для IE6-7 — используем MHTML-включение</a></li></ul></li><li><span>IE6</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/haslayout">hasLayout</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/max-width-for-ie6">Max-width</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/min-height-for-ie6">Min-height</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/min-width-for-ie6">Min-width</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/min-width-and-max-width-for-ie6">Min-width и max-width одновременно</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/png-transparency-ie6">PNG и прозрачность</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/height-block-1px-ie6">Высота блока 1px</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/ie6-duplicate-characters-bug">Дублирование символов</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/hole-under-footer">Дырка под футером</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/kak-perekrit-select-v-ie6">Как перекрыть select</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/has-layout-clip">Обрезка контента c отрицательным margin в IE6</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/margin-float-block-v-ie6">Отступы плавающих блоков</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/block-model-ie6">Проблемы с размерами блоков</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/first-child-for-ie6">Псевдокласс :first-child</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/ie-hover-fix">Псевдокласс hover в IE 6</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/docherniy-css-selector">Селектор потомков &gt;</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/selectori-atributov-type-v-ie6">Селекторы атрибутов [type=...]</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/nursing-selector-for-ie6">Сестринский селектор</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/smeshenie-na-1px-v-ie6">Смещение на 1px</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/links-with-attachment">Ссылки с вложением</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/flickering-in-ie6">Устраняем flickering</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/ie6/emulation-fixed-in-ie6">Эмуляция position:fixed</a></li></ul></li><li><span>Opera</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/opera/overflow-y">overflow-y</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/opera/font-face-no-load-fonts">Не подгружаются шрифты @font-face</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/opera/oveflow">Проблема с oveflow: hidden</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/glyuki-brauzerov/opera/opera-img-radius">Скругление img</a></li></ul></li></ul></li><li><span>Мобильные</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/mobiles/mobile_web">HTML шаблон для мобильных устройств</a></li></ul></li><li><span>Навигация</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/navigation/css-drop-down-menu">Выпадающее меню на CSS</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/navigation/vyravnivanie-po-tsentru-navigatsii-iz-blokov">Выравнивание навигации из блоков по центру</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/navigation/vyravnivanie-navigatsii-po-tsentru">Выравнивание навигации по середине</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/navigation/rubber-menu">Резиновое меню</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/navigation/rubber-blocks-menu">Резиновое меню из блоков</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/navigation/doloj-dopolnitelnyj-klass">Убираем класс для первого элемента</a></li></ul></li><li><span>Позиционирование</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/box-sizing">Box-sizing: переключаем блочную модель</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/inline-block-simple-property-for-complex-tasks">inline-block: простое свойство для непростых задач</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/vertical-position-for-inline-elements">Вертикальная позиция для строчного элемента</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/vertikalnoe-vyravnivanie-otnositelno-roditelya">Вертикальное выравнивание</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/aligment-on-center-with-position-absolute">Выравнивание по центру с position: absolute</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/calculated-spaces">Вычисляемые отступы</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/no-typical-position">Два в одном: позиция + размеры</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/inline-block-margins">Долой отступы между строчными элементами (и блоками)</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/margin-collapsing-trick">Обходим схлопывание margin</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/vyravnivanie-risunka">Центрирование картинки в блоке</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/pozitsionirovanie/inline-block">Центрирование резинового блока по горизонтали</a></li></ul></li><li><span>Работа с флеш</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/rabota-s-flash/aktivaciya-flash">Активация flash</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/rabota-s-flash/vstavka-flash-v-html">Вставка flash в HTML</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/rabota-s-flash/insert-youtube-video">Вставляем ролик с YouTube</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/rabota-s-flash/kak-otkluchit-flash">Как отключить flash</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/rabota-s-flash/kak-perekrit-flash">Как перекрыть flash</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/rabota-s-flash/object-params">Параметры для вставки объектов</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/rabota-s-flash/ssilka-na-flash">Ссылка на flash объекте</a></li></ul></li><li><span>Разгоняем сайт</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/css-triangles">CSS треугольники</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/hardware-css-animation">Аппаратное ускорение анимации</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/data-url">Встраиваем изображения — data:URL</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/gradient-css">Градиент: CSS3 против CSS2 + картинка</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/sprites-ladder">Лесенка спрайтов — сложный случай поклейки</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/times-for-cross">На одну картинку меньше. Спецсимвол &amp;times;</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/boxshadow-slick-effects">Необычные тени с CSS3 box-shadow</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/optimization-google-web-fonts">Оптимизация Google Web Fonts</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/background-optimization-with-canvas">Оптимизация фонов с помощью Canvas</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/problems-with-border-radius">Проблемы с border-radius</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/list-and-before">Псевдоэлемент before для маркера списка</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/rounding-corners-review">Скругление углов. Обзор методов.</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/sokrashaem-html5-kod">Сокращаем HTML5 код</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/sprite">Спрайты: меньше картинок — больше скорость</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/box-shadow">Тень для блока</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/css-angles">Фигуры с углами на CSS</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/overclock-site/css3-gradient-patterns">Шаблоны градиентов</a></li></ul></li><li><span>Разное</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/different/skype-addon">Дополнение Skype</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/different/howto-favicon">Подключить favicon</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/different/site-maintenance">Профилактика сайта: максимально простое оповещение</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/different/reference-on-skype">Ссылки на skype</a></li></ul></li><li><span>Типографика</span><ul style="display: none;"><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/font-face-in-the-details">@font-face в деталях</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/cufon">Cufon — нестандартный шрифт средствами JS</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/font-size-100-for-html">font-size: 100.01% для html</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/safe-fonts-part4">Безопасные шрифтовые CSS стеки для англоязычных текстов</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/safe-fonts-part3">Безопасные шрифтовые CSS стеки для рунета</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/safe-fonts">Безопасные шрифты</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/vertical-text">Вертикальный текст</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/using-first-letter">Используем псевдоэлемент :first-letter</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/css-text-stroke">Контур для текста</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/any-font">Нестандарный шрифт. Быть ему или нет?</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/font-face-non-standart-fonts-on-css">Нестандартный шрифт средствами CSS</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/first-letter-float">Плавающий :first-letter</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/substitution-of-text-an-image">Подмена текста изображением</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/safe-fonts-part2">Соответствия шрифтов Windows, Mac и Unix/Linux</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/first-letter-str">Строчный :first-letter</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/inclined-text">Текст под углом</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/gradient-text">Текст с CSS градиентом</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/text-shadow">Тень для текста</a></li><li><a href="http://xiper.net/collect/html-and-css-tricks/typographics/css-text-reflection">Эффект отражения</a></li></ul></li></ul>        </div>
+    <div class="sideBarAdvertisementBox">
+<!--script type='text/javascript'>
+GA_googleFillSlot("sidebar");
+</script-->
+
+<div id="div-gpt-ad-1388397822729-0" data-google-query-id="">
+<script type="text/javascript">
+googletag.display('div-gpt-ad-1388397822729-0');
+</script>
+</div>
+</div>		
+    </div>
+	<!--/side bar-->	
+<div class="header">
+<a href="http://xiper.net/" title="на главную" class="headerLogo"><img src="./Условные комментарии_files/logo.png" alt="xiper.net - основы и секреты front-end разработки" width="297" height="62"></a>
+<ul>
+<li><a href="http://xiper.net/">Главная</a></li>
+<li class="active">
+<a href="http://xiper.net/collect/">Собираем</a>
+<ul>
+<li class="active"><a href="http://xiper.net/collect/html-and-css-tricks/">HTML и CSS приемы</a></li>
+<li><a href="http://xiper.net/collect/web-without-flash/">Веб без flash</a></li>
+<li><a href="http://xiper.net/collect/weekdays-front-end-dev/">Будни front end разработчика</a></li>
+<li><a href="http://xiper.net/collect/services/">Сервисы</a></li>
+<li><a href="http://xiper.net/collect/js-plugins/">Javascript: решения и плагины</a></li>
+</ul>
+</li>
+<li><a href="http://xiper.net/watch/">Следим</a>
+<ul>
+<li><a href="http://xiper.net/watch/webstatistic">Веб статистика</a></li>
+<li><a href="http://xiper.net/watch/news/">Куда веб катится</a></li>
+<li><a href="http://xiper.net/watch/xiper-news/">Куда Xiper катится</a></li>
+</ul>
+</li>
+<li><a href="http://xiper.net/uncensored/">Без цензуры</a></li>
+<li>
+<a href="http://xiper.net/learn/">Учимся</a>
+<ul><li><a href="http://xiper.net/learn/photoshop/">Photoshop для кодера</a></li><li><a href="http://xiper.net/learn/css/">Уроки CSS</a></li><li><a href="http://xiper.net/learn/html/">Уроки HTML</a></li><li><a href="http://xiper.net/learn/javascript/">Уроки Javascript</a></li><li><a href="http://xiper.net/learn/lessons-jquery/">Уроки jQuery</a></li><li><a href="http://xiper.net/learn/tegofenshuj/">Тегофеншуй</a></li><li><a href="http://xiper.net/learn/also-need-to-know/">Тоже нужно знать</a></li><li><a href="http://xiper.net/learn/svg/">Уроки SVG</a></li><li><a href="http://xiper.net/learn/bonus-books/">Бонус книги</a></li></ul>
+</li>
+<li>
+<a href="http://xiper.net/manuals/">Справочники</a>
+<ul><li><a href="http://xiper.net/manuals/html/">HTML справочник</a></li><li><a href="http://xiper.net/manuals/css/">CSS справочник</a></li><li><a href="http://xiper.net/manuals/canvas/">Справочник Canvas</a></li><li><a href="http://xiper.net/manuals/terms/">Cловарь терминов</a></li></ul>
+</li>
+</ul>
+<!--<form action="search.html" method="get">
+<div><input type="text" name="s" value="я ищу&hellip;" /><input type="submit" value="найти" /> </div>
+</form>-->
+
+<div class="headerSubscription">
+ 	<a href="http://twitter.com/xiper_news/" class="headerTwitter" title="наши новости и мысли на twitter" rel="nofollow">twitter</a>
+    <a href="http://xiper.net/rss" class="headerSubscriptionRSS" title="подписаться на RSS">RSS</a>
+    <a href="http://xiper.net/subscription" class="headerSubscriptionEmail" title="подписаться на e-mail рассылку">e-mail</a>
+</div>
+
+</div></div>
+<!--/main wrap-->
+<!--footer-->
+<div class="footer" id="[*id*]">
+<!--{{footerAdvertisementBox}}-->
+
+
+<div class="advertisementPanel">
+<div class="topAdvertisementBox">
+
+<div id="div-gpt-ad-1412405073803-0" style="width:728px; height:90px; margin: 0 auto" data-google-query-id="">
+<script type="text/javascript">
+googletag.display('div-gpt-ad-1412405073803-0');
+</script>
+</div>
+
+</div>
+</div>
+
+	<div class="footerCopy">
+	© 2009-2016 xiper.net<br>
+	Много о HTML, CSS, Javascript.<br>
+	Опасно для мозга. Можно стать умным.
+     <div>Материалы и поддержка проекта — <a href="https://frondevo.kiev.ua/" rel="nofollow">Frondevo</a>.</div>
+	</div>
+	
+<div class="footerSection">
+		<h2 title="информация о проекте">Инфо</h2>
+		<ul>
+		<li><a href="http://xiper.net/about">О проекте</a></li>
+                <li><a href="http://xiper.net/about-materials">О материалах</a></li>
+                <li><a href="http://xiper.net/stats">Статистика</a></li>
+                <li><a href="http://xiper.net/adv/">Реклама</a></li>
+		<li><a href="http://xiper.net/feedback">Написать нам</a></li>
+		</ul>
+	</div>
+	<div class="footerNavSection">		
+  <h2 title="основные разделы сайта">Разделы</h2>
+		<ul>
+		<li><a href="http://xiper.net/">Главная</a></li>
+                <li><a href="http://xiper.net/uncensored/">Без цензуры</a></li>    
+		<li><a href="http://xiper.net/collect/">Собираем</a></li>
+                <li><a href="http://xiper.net/learn/">Учимся</a></li>        
+		<li><a href="http://xiper.net/watch/">Следим</a></li>	
+		<li><a href="http://xiper.net/manuals/">Справочники</a></li>
+		</ul>
+	</div>
+	
+</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-5053168-6"]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+    var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+    ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!--/footer-->
+<div class="extLives"></div><iframe id="iagdtd_frame" src="./Условные комментарии_files/586_contentch.html" style="position: absolute; width: 1px; height: 1px; left: -9999px;"></iframe></body></html>
