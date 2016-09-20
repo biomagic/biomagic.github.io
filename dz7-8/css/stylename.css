@@ -30,8 +30,5 @@
     font-style: normal;
     font-weight: 600;
 
-    src: url('../fonts/OpenSansExtraBold.eot');
-    src: url('../fonts/OpenSansExtraBold.eot?#iefix')format('embedded-opentype'),
-    url('../fonts/OpenSansExtraBold.woff') format('woff'),
-    url('../fonts/OpenSansExtraBold.ttf') format('truetype');
+    src: url('../fonts/OpenSansExtraBold.ttf') format('truetype');
 }
