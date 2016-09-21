@@ -71,8 +71,8 @@ body > *,
 .hyphenate {
     visibility: visible;
     -webkit-hyphens: auto;
-    -ms-hyphens: auto;
     hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 /* Wrapper for hide overflow text */
