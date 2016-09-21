@@ -13,12 +13,6 @@ function pow() {
       return 1;
   }
 
-  x = parseInt(x);
-  y = parseInt(y);
-
-  console.log(typeof x);
-  console.log(typeof y);
-
   for (var i = y - 2; i >= 0; i--) {
     z = z * x;
     if (x < 0 && z > 0) {
