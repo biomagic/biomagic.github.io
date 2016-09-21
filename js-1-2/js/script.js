@@ -63,7 +63,3 @@ function names() {
       }
   }
 }
-
-
-var str = parseInt('12');
-      console.log(str)
