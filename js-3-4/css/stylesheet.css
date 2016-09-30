@@ -1,0 +1,16 @@
+.test-header {
+	text-align: center;
+}
+
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.test-header {
+	margin-top: 25px;
+}
+
+.main__li {
+	margin: 20px 0 20px 50px;
+}
