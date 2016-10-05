@@ -1,36 +1,54 @@
-function documentCreate() {
+var testObj = {
+    wrapperItem: '<div class="wrapper"></div>',
+    mainItem: '<main class="main"></main>',
+    headerItem: '<header class="test-header"><h2>Тест по программированию</h2></header>',
+    buttonItem:'<button class="review btn-lg btn-success">Проверить мои результаты</button>',
+    listAdd: function(ul, li) {
 
-  // Header form
+    // li items
 
-  var testHeader = '<header class="test-header"><h2>Тест по программированию</h2></header>';
+    var variantText = 'Вариант ответа №';
+    var variantAnswerItem = '';
+    var input = '<input type="checkbox" class="main__checkbox" id="a';    
 
-  // Call li items
+    for (var i = 1; i <= li; i++) {    
+      variantAnswerItem += '<li class="main__li">' + input + i + '">' + '<p class="main__p">' + variantText + i + '</p>' + '</li>';
+    }
 
-  var variantText = 'Вариант ответа №';
+    // ul items
 
-  var variantAnswerItem = '';
+    var questionText = '. Вопрос №';
+    var questionsList = '';
 
-  var input = '<input type="checkbox" class="main__checkbox" id="a';
+    for (var i = 1; i <= ul; i++) {
+      questionsList += '<h3>' + i + questionText + i + '</h3>' + '<ul class="main__ul">' + variantAnswerItem + '</ul>';
+    }
 
-  var button = '<button class="review btn-lg btn-success">Проверить мои результаты</button>'
+    var result = questionsList;
 
-  for (var i = 1; i <= 3; i++) {    
-    variantAnswerItem += '<li class="main__li">' + input + i + '">' + '<p class="main__p">' + variantText + i + '</p>' + '</li>';
-  }
+    return result;
+  }  
+};
 
-  // Call ul
+// Add wrapper element
 
-  var questionText = '. Вопрос №';
+document.body.insertAdjacentHTML('afterBegin', testObj.wrapperItem);
+var wrapperEl = document.body.querySelector(".wrapper");
 
-	var questionsList = '';
+// Add main element
 
-	for (var i = 1; i <= 3; i++) {
-		questionsList += '<h3>' + i + questionText + i + '</h3>' + '<ul class="main__ul">' + variantAnswerItem + '</ul>';
-	}
+wrapperEl.insertAdjacentHTML('afterBegin', testObj.mainItem);
+var mainEl = document.body.querySelector(".main");
 
-  var result = '<div class="wrapper">' + testHeader + '<main class="main">' + questionsList + '</main>' + button + '</div>';
+// Add header
 
-  return result;
-}
+wrapperEl.insertAdjacentHTML('afterBegin', testObj.headerItem);
 
-document.body.insertAdjacentHTML('afterBegin', documentCreate());
+// Add list
+
+mainEl.insertAdjacentHTML('beforeEnd', testObj.listAdd(3, 3));
+
+// Add button
+
+wrapperEl.insertAdjacentHTML('beforeEnd', testObj.buttonItem);
+
