@@ -5,6 +5,7 @@
 .wrapper {
 	max-width: 960px;
 	margin: 0 auto;
+	padding-bottom: 50px;
 }
 
 .test-header {
@@ -13,4 +14,17 @@
 
 .main__li {
 	margin: 20px 0 20px 50px;
+}
+
+.main__checkbox {
+	float: left;
+}
+
+.main__p {
+	margin-left: 20px;
+}
+
+.review {
+	display: block;
+	margin: 0 auto;
 }
