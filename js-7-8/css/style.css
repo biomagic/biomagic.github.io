@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #4078c0;
+	font: 1em 'PT Sans', sans-serif;
+}
+
+.tabbed {
+	width: 700px;
+	margin: 50px auto;
+}
+
+.tabbed > input {
+	display: none;
+}
+
+.tabbed > label {
+	display: block;
+	float: left;
+	padding: 12px 20px;
+	margin-right: 5px;
+	cursor: pointer;
+	transition: background-color .3s;
+}
+
+.tabbed > label:hover,
+.tabbed > input:checked + label {
+	background: #4078c0;
+	color: #fff;
+}
+
+.tabs {
+	clear: both;	
+}
+
+.tab {
+	position: absolute;
+	width: 700px;
+	border: 2px dashed #ddd;
+	padding: 10px 30px 40px;
+	line-height: 1.4em;
+	color: #333;
+	opacity: 0;
+}
+
+.visible {
+	opacity: 1;
+}
+
