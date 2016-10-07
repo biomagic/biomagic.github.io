@@ -33,7 +33,8 @@ $inputs.on('mouseleave', function() {
 	$(this).attr("title", $title);
 })
 
-$button.on('click', function() {
+$button.on('click', function(e) {
+	e.preventDefault();
 	for(var i in $inputs) {
 		$title = $($inputs[i]).attr("title");
 		$pEl = $($inputs[i]).next();
