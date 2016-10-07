@@ -96,7 +96,9 @@ body {
 	color: #4078c0;
 	border: 2px dashed #4078c0;
 	width: 150px;
-	height: 50px;
 	font-size: 18px;
 	transition: background-color .3s, color .3s;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 47px;
 }
