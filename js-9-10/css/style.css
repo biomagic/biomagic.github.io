@@ -2,7 +2,7 @@
 
 body {
 	font-family: sans-serif;
-	margin: 0;
+	margin: 0 0 500px;
 	padding: 0;
 }
 
@@ -23,25 +23,26 @@ label {
 /* Checkbox styles */
 
 .niceCheck {
-width: 17px;
-height: 17px;
-display: block;
-cursor: pointer;
-background: url('../images/checkbox-sprite.png');
-margin-top: 25px;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url('../images/checkbox-sprite.png');
 }
 
 .niceCheck input {
-display: none;
+	display: none;
 }
 
 #test-check1 {
 	position: absolute;
-	clip: rect(0, 0, 0, 0);
+	clip: rect(1px, 1px, 1px, 1px);
 }
+
 #text-label1 {
 	cursor: pointer;
 }
+
 #text-label1:after {
 	content: " ";
 	display: inline-block;
@@ -52,13 +53,97 @@ display: none;
 	top: 3px;
 	margin-left: 15px;
 }
+
 #test-check1:checked + #text-label1:after {
-background-position: 0 -17px;
+	background-position: 0 -17px;
 }
+
 #text-label1:hover:after {
-background-position: 0 -34px;
+	background-position: 0 -34px;
 }
+
 #test-check1:checked + #text-label1:hover:after {
-background-position: 0 -51px;
+	background-position: 0 -51px;
+}
+
+/* Menu */
+
+li {
+	list-style: none;
+	display: block;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu {
+	background: orange;
+	display: inline-block;
+}
+
+.menu * {
+	box-sizing: border-box;
+}
+
+.menu > li {
+	float: left;
+	padding: 0 10px;
+	font-size: 24px; 
+	color: #000000;
+}
+
+li:hover {
+	background: grey;
+}
+
+.menu > li > a {
+	display: inline-block;
+}
+
+.sub-menu {
+	position: absolute;
+	left: 0;
+	top: 30px;
+	width: 200px;
+	background-color: green;
+	display: none;
+	overflow: hidden;
+}
+
+
+.sub-menu a {
+	font-size: 14px;
+	line-height: 25px;
+	margin-left: 15px;
+}
+
+.dropdown:hover > .sub-menu {
+	overflow: visible;
+}
+
+.sub-menu ul {
+	top: 0;
+	left: 198px;
+}
+
+.dropdown {
+	position: relative;
+	display: block;
+	margin: 0;
+}
+
+.sub-menu .caret {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+}
+
+.caret-right > .caret {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px dashed;
 }
 
